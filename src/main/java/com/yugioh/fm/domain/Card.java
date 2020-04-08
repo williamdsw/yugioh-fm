@@ -1,4 +1,4 @@
-package com.yugioh.fm.models;
+package com.yugioh.fm.domain;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -12,9 +12,9 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 
-import com.yugioh.fm.models.enums.CardType;
-import com.yugioh.fm.models.enums.GuardianStar;
-import com.yugioh.fm.models.enums.MonsterType;
+import com.yugioh.fm.domain.enums.CardType;
+import com.yugioh.fm.domain.enums.GuardianStar;
+import com.yugioh.fm.domain.enums.MonsterType;
 
 @Entity
 public class Card extends AbstractEntity {
@@ -25,11 +25,11 @@ public class Card extends AbstractEntity {
 	private String number;
 	private String name;
 	private String description;
-	
-	@CollectionTable (name = "card_type")
+
+	@CollectionTable(name = "card_type")
 	private Integer cardType;
 
-	@CollectionTable (name = "monster_type")
+	@CollectionTable(name = "monster_type")
 	private Integer monsterType;
 
 	private Integer level;
@@ -37,21 +37,24 @@ public class Card extends AbstractEntity {
 	private Integer def;
 	private String password;
 	private Float starChipCost;
-	
-	@OneToMany (mappedBy = "id.card")
+
+	@OneToMany(mappedBy = "id.card")
 	private List<DeckCard> deckCards = new ArrayList<>();
-	
-	@ElementCollection (fetch = FetchType.EAGER)
-	@CollectionTable (name = "guardian_star")
+
+	@ElementCollection(fetch = FetchType.EAGER)
+	@CollectionTable(name = "guardian_star")
 	private Set<Integer> guardians = new HashSet<>();
-	
-	@ElementCollection (fetch = FetchType.EAGER)
-	@CollectionTable (name = "required_card_fusion")
+
+	@ElementCollection(fetch = FetchType.EAGER)
+	@CollectionTable(name = "required_card_fusion")
 	private List<Integer> requiredCardsToFusion = new ArrayList<>();
+
+	private String imageUrl;
 
 	// CONSTRUCTOR
 
-	public Card() {}
+	public Card() {
+	}
 
 	public Card(Integer id) {
 		super();
@@ -78,100 +81,108 @@ public class Card extends AbstractEntity {
 	public String getNumber() {
 		return number;
 	}
-	
+
 	public void setNumber(String number) {
 		this.number = number;
 	}
-	
+
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public String getDescription() {
 		return description;
 	}
-	
+
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
+
 	public CardType getCardType() {
 		return (this.cardType != null ? CardType.toEnum(cardType): null);
 	}
-	
+
 	public void setCardType(CardType cardType) {
 		this.cardType = (cardType != null ? cardType.getCode() : null);
 	}
-	
+
 	public MonsterType getMonsterType() {
 		return (this.monsterType != null ? MonsterType.toEnum(monsterType): null);
 	}
-	
+
 	public void setMonsterType(MonsterType monsterType) {
 		this.monsterType = (monsterType != null ? monsterType.getCode() : null);
 	}
-	
+
 	public Integer getLevel() {
 		return level;
 	}
-	
+
 	public void setLevel(Integer level) {
 		this.level = level;
 	}
-	
+
 	public Integer getAtk() {
 		return atk;
 	}
-	
+
 	public void setAtk(Integer atk) {
 		this.atk = atk;
 	}
-	
+
 	public Integer getDef() {
 		return def;
 	}
-	
+
 	public void setDef(Integer def) {
 		this.def = def;
 	}
-	
+
 	public String getPassword() {
 		return password;
 	}
-	
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 	public Float getStarChipCost() {
 		return starChipCost;
 	}
-	
+
 	public void setStarChipCost(Float starChipCost) {
 		this.starChipCost = starChipCost;
 	}
-	
+
 	public Set<GuardianStar> getGuardians() {
 		return guardians.stream().map(code -> GuardianStar.toEnum(code)).collect(Collectors.toSet());
 	}
-	
+
 	public void addGuardian(GuardianStar guardian) {
 		if (this.guardians.size() < 2 && guardian != null) {
 			this.guardians.add(guardian.getCode());
 		}
 	}
-	
+
 	public List<Card> getRequiredCardsToFusion() {
 		return requiredCardsToFusion.stream().map(id -> new Card (id)).collect(Collectors.toList());
 	}
-	
+
 	public void addRequiredCardToFusion(Card card) {
 		if (card != null) {
 			this.requiredCardsToFusion.add(card.getId());
 		}
+	}
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 }

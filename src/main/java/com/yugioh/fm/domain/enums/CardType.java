@@ -1,4 +1,4 @@
-package com.yugioh.fm.models.enums;
+package com.yugioh.fm.domain.enums;
 
 public enum CardType {
 	

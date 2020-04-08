@@ -1,4 +1,4 @@
-package com.yugioh.fm.models;
+package com.yugioh.fm.domain;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -15,7 +15,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.yugioh.fm.models.enums.MonsterType;
+import com.yugioh.fm.domain.enums.MonsterType;
 
 @Entity
 public class Deck extends AbstractEntity {
@@ -25,7 +25,7 @@ public class Deck extends AbstractEntity {
 	private static final long serialVersionUID = 1L;
 	
 	@JsonIgnore @OneToOne @JoinColumn (name = "character_id")
-	private Character character;
+	private GameCharacter character;
 	
 	@OneToMany (mappedBy = "id.deck")
 	private List<DeckCard> deckCards = new ArrayList<>();
@@ -37,17 +37,17 @@ public class Deck extends AbstractEntity {
 	// CONSTRUCTOR
 
 	public Deck() {}
-	public Deck(Character character) {
+	public Deck(GameCharacter character) {
 		this.character = character;
 	}
 
 	// GETTERS / SETTERS
 	
-	public Character getCharacter() {
+	public GameCharacter getCharacter() {
 		return character;
 	}
 
-	public void setCharacter(Character character) {
+	public void setCharacter(GameCharacter character) {
 		this.character = character;
 	}
 	
