@@ -36,7 +36,7 @@ public class Card extends AbstractEntity {
 	private Integer atk;
 	private Integer def;
 	private String password;
-	private Float starChipCost;
+	private double starChipCost;
 
 	@OneToMany(mappedBy = "id.card")
 	private List<DeckCard> deckCards = new ArrayList<>();
@@ -62,7 +62,7 @@ public class Card extends AbstractEntity {
 	}
 
 	public Card(String number, String name, String description, CardType cardType, MonsterType monsterType, 
-				Integer level, Integer atk, Integer def, String password, Float starChipCost) {
+				Integer level, Integer atk, Integer def, String password, double starChipCost) {
 		super();
 		this.number = number;
 		this.name = name;
@@ -150,21 +150,29 @@ public class Card extends AbstractEntity {
 		this.password = password;
 	}
 
-	public Float getStarChipCost() {
+	public double getStarChipCost() {
 		return starChipCost;
 	}
 
-	public void setStarChipCost(Float starChipCost) {
+	public void setStarChipCost(double starChipCost) {
 		this.starChipCost = starChipCost;
+	}
+	
+	public List<DeckCard> getDeckCards() {
+		return deckCards;
+	}
+	
+	public void setDeckCards(List<DeckCard> deckCards) {
+		this.deckCards = deckCards;
 	}
 
 	public Set<GuardianStar> getGuardians() {
 		return guardians.stream().map(code -> GuardianStar.toEnum(code)).collect(Collectors.toSet());
 	}
 
-	public void addGuardian(GuardianStar guardian) {
-		if (this.guardians.size() < 2 && guardian != null) {
-			this.guardians.add(guardian.getCode());
+	public void setGuardians(Set<GuardianStar> guardians) {
+		if (guardians != null & guardians.size() == 2) {
+			this.guardians = guardians.stream().map(guardian -> guardian.getCode()).collect(Collectors.toSet());
 		}
 	}
 
