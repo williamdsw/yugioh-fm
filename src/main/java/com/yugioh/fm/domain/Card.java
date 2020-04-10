@@ -36,7 +36,7 @@ public class Card extends AbstractEntity {
 	private Integer atk;
 	private Integer def;
 	private String password;
-	private double starChipCost;
+	private Double starChipCost;
 
 	@OneToMany(mappedBy = "id.card")
 	private List<DeckCard> deckCards = new ArrayList<>();
@@ -62,7 +62,7 @@ public class Card extends AbstractEntity {
 	}
 
 	public Card(String number, String name, String description, CardType cardType, MonsterType monsterType, 
-				Integer level, Integer atk, Integer def, String password, double starChipCost) {
+				Integer level, Integer atk, Integer def, String password, Double starChipCost) {
 		super();
 		this.number = number;
 		this.name = name;
@@ -150,11 +150,11 @@ public class Card extends AbstractEntity {
 		this.password = password;
 	}
 
-	public double getStarChipCost() {
+	public Double getStarChipCost() {
 		return starChipCost;
 	}
 
-	public void setStarChipCost(double starChipCost) {
+	public void setStarChipCost(Double starChipCost) {
 		this.starChipCost = starChipCost;
 	}
 	

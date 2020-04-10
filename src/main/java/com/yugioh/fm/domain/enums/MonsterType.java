@@ -6,7 +6,7 @@ public enum MonsterType {
 
 	AQUA(1, "Aqua"),
 	BEAST(2, "Beast"),
-	BEAST_WARRIOR(3, "Beast Warrior"),
+	BEAST_WARRIOR(3, "Beast-Warrior"),
 	DINOSAUR(4, "Dinosaur"),
 	DRAGON(5, "Dragon"),
 	FAIRY(6, "Fairy"),

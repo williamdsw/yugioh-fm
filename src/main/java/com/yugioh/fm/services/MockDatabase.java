@@ -1,5 +1,8 @@
 package com.yugioh.fm.services;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -33,6 +36,9 @@ public class MockDatabase {
 	private CardRepository cardRepository;
 	private DeckCardRepository deckCardRepository;
 	
+	private final Integer NUMBER_OF_CHARACTERS = 39;
+	private final Integer NUMBER_OF_CARDS = 722;
+	
 	// CONSTRUCTOR
 	
 	@Autowired
@@ -47,179 +53,87 @@ public class MockDatabase {
 	
 	public void instantiate() throws Exception {
 		
+		// Data from files
+		List<String> gameCharacterNames = getContentFromFile("files/data/game-character/names.txt");
+		List<String> gameCharacterImageUrls = getContentFromFile("files/data/game-character/image-urls.txt");
+		List<String> cardNumbers = getContentFromFile("files/data/card/numbers.txt");
+		List<String> cardNames = getContentFromFile("files/data/card/names.txt");
+		List<String> cardDescriptions = getContentFromFile("files/data/card/descriptions.txt");
+		List<String> cardTypes = getContentFromFile("files/data/card/card-types.txt");
+		List<String> cardMonsterTypes = getContentFromFile("files/data/card/monster-types.txt");
+		List<String> cardLevels = getContentFromFile("files/data/card/levels.txt");
+		List<String> cardAttacks = getContentFromFile("files/data/card/attacks.txt");
+		List<String> cardDefenses = getContentFromFile("files/data/card/defenses.txt");
+		List<String> cardPasswords = getContentFromFile("files/data/card/passwords.txt");
+		List<String> cardStarChipCosts = getContentFromFile("files/data/card/starchip-costs.txt");
+		
+		System.out.println("cardDescriptions.size = " + cardDescriptions.size());
+
+		// LISTS
+		List<GameCharacter> characters = new ArrayList<>();
+		List<Deck> decks = new ArrayList<>();
+		List<Card> cards = new ArrayList<>();
+		
+		for (int index = 0; index < NUMBER_OF_CHARACTERS; index++) {
+			GameCharacter character = new GameCharacter(null, null, null);
+			character.setName(gameCharacterNames.get(index));
+			character.setImageUrl(gameCharacterImageUrls.get(index));
+			
+			Deck deck = new Deck(character);
+			
+			characters.add(character);
+			decks.add(deck);
+		}
+		
+		for (int index = 0; index < NUMBER_OF_CARDS; index++) {
+
+			CardType cardType = CardType.toEnum(cardTypes.get(index));
+			MonsterType monsterType = (!cardMonsterTypes.get(index).contains("NULL") ? MonsterType.toEnum(cardMonsterTypes.get(index)) : null);
+			Integer level = (!cardLevels.get(index).contains("NULL") ? Integer.parseInt(cardLevels.get(index)) : null);
+			Integer attack = (!cardAttacks.get(index).contains("NULL") ? Integer.parseInt(cardAttacks.get(index)) : null);
+			Integer defense = (!cardDefenses.get(index).contains("NULL") ? Integer.parseInt(cardDefenses.get(index)) : null);
+			String password = (!cardPasswords.get(index).contains("NULL") ? cardPasswords.get(index) : null);
+			Double starChipCost = (!cardStarChipCosts.get(index).contains("NULL") ? Double.parseDouble(cardStarChipCosts.get(index)) : null);
+			
+			Card card = new Card();
+			card.setId(null);
+			card.setNumber(cardNumbers.get(index));
+			card.setName(cardNames.get(index));
+			//card.setDescription(cardDescriptions.get(index));
+			card.setDescription("");
+			card.setNumber(cardNumbers.get(index));
+			card.setCardType(cardType);
+			card.setMonsterType(monsterType);
+			card.setLevel(level);
+			card.setAtk(attack);
+			card.setDef(defense);
+			card.setPassword(password);
+			card.setStarChipCost(starChipCost);
+			card.setImageUrl(String.format("assets/cards/%s.jpg", card.getNumber()));
+			//card.setGuardians(guardians);
+			
+			System.out.println("CARD OK?");
+			
+			cards.add(card);
+		}
+		
+		System.out.println("ALL CARDS?");
+		
+	
 		// GAME CHARACTERS
-		GameCharacter simonMuran = new GameCharacter(null, "Simon Muran", null);
-		GameCharacter teana1 = new GameCharacter(null, "Teana", null);
-		GameCharacter jono1 = new GameCharacter(null, "Jono", null);
-		GameCharacter villager1 = new GameCharacter(null, "Villager 1", null);
-		GameCharacter villager2 = new GameCharacter(null, "Villager 2", null);
-		GameCharacter villager3 = new GameCharacter(null, "Villager 3", null);
-		GameCharacter seto1 = new GameCharacter(null, "Seto 1", null);
-		GameCharacter heishin1 = new GameCharacter(null, "Heishin", null);
-		GameCharacter rexRaptor = new GameCharacter(null, "Rex Raptor", null);
-		GameCharacter weevilUnderwood = new GameCharacter(null, "Weevil Underwood", null);
-		GameCharacter maiValentine = new GameCharacter(null, "Mai Valentine", null);
-		GameCharacter banditKeith = new GameCharacter(null, "Bandit Keith", null);
-		GameCharacter shadi = new GameCharacter(null, "Shadi", null);
-		GameCharacter yamiBakura = new GameCharacter(null, "Yami Bakura", null);
-		GameCharacter maximillionPegasus = new GameCharacter(null, "Maximillion Pegasus", null);
-		GameCharacter isis = new GameCharacter(null, "Isis", null);
-		GameCharacter setoKaiba = new GameCharacter(null, "Seto Kaiba", null);
-		GameCharacter mageSoldier = new GameCharacter(null, "Mage Soldier", null);
-		GameCharacter jono2 = new GameCharacter(null, "Jono 2", null);
-		GameCharacter teana2 = new GameCharacter(null, "Teana 2", null);
-		GameCharacter oceanMage = new GameCharacter(null, "Ocean Mage", null);
-		GameCharacter highMageSecmeton = new GameCharacter(null, "High Mage Secmeton", null);
-		GameCharacter forestMage = new GameCharacter(null, "Forest Mage", null);
-		GameCharacter highMageAnubisius = new GameCharacter(null, "High Mage Anubisius", null);
-		GameCharacter mountainMage = new GameCharacter(null, "Mountain Mage", null);
-		GameCharacter highMageAtenza = new GameCharacter(null, "High Mage Atenza", null);
-		GameCharacter desertMage = new GameCharacter(null, "Desert Mage", null);
-		GameCharacter highMageMartis = new GameCharacter(null, "High Mage Martis", null);
-		GameCharacter meadowMage = new GameCharacter(null, "Meadow Mage", null);
-		GameCharacter highMageKepura = new GameCharacter(null, "High Mage Kepura", null);
-		GameCharacter labyrinthMage = new GameCharacter(null, "Labyrinth Mage", null);
-		GameCharacter seto2 = new GameCharacter(null, "Seto 2", null);
-		GameCharacter sebek = new GameCharacter(null, "Sebek", null);
-		GameCharacter neku = new GameCharacter(null, "Neku", null);
-		GameCharacter heishin2 = new GameCharacter(null, "Heishin 2", null);
-		GameCharacter seto3 = new GameCharacter(null, "Seto 3", null);
-		GameCharacter darkNite = new GameCharacter(null, "Dark Nite", null);
-		GameCharacter nitemare = new GameCharacter(null, "Nitemare", null);
-		GameCharacter duelMasterK = new GameCharacter(null, "Duel Master K", null);
-		
-		// GAME CHARACTERS IMAGE URL
-		simonMuran.setImageUrl("assets/characters/simon-muran.jpg");
-		teana1.setImageUrl("assets/characters/teana-1.jpg");
-		jono1.setImageUrl("assets/characters/jono-1.jpg");
-		villager1.setImageUrl("assets/characters/villager-1.jpg");
-		villager2.setImageUrl("assets/characters/villager-2.jpg");
-		villager3.setImageUrl("assets/characters/villager-3.jpg");
-		seto1.setImageUrl("assets/characters/seto-1.jpg");
-		heishin1.setImageUrl("assets/characters/heishin-1.jpg");
-		rexRaptor.setImageUrl("assets/characters/rex-raptor.jpg");
-		weevilUnderwood.setImageUrl("assets/characters/weevil-underwood.jpg");
-		maiValentine.setImageUrl("assets/characters/mai-valentine.jpg");
-		banditKeith.setImageUrl("assets/characters/bandit-keith.jpg");
-		shadi.setImageUrl("assets/characters/shadi.jpg");
-		yamiBakura.setImageUrl("assets/characters/yami-bakura.jpg");
-		maximillionPegasus.setImageUrl("assets/characters/maximillion-pegasus.jpg");
-		isis.setImageUrl("assets/characters/isis.jpg");
-		setoKaiba.setImageUrl("assets/characters/seto-kaiba.jpg");
-		mageSoldier.setImageUrl("assets/characters/mage-soldier.jpg");
-		jono2.setImageUrl("assets/characters/jono-2.jpg");
-		teana2.setImageUrl("assets/characters/teane-2.jpg");
-		oceanMage.setImageUrl("assets/characters/ocean-mage.jpg");
-		highMageSecmeton.setImageUrl("assets/characters/high-mage-secmeton.jpg");
-		forestMage.setImageUrl("assets/characters/forest-mage.jpg");
-		highMageAnubisius.setImageUrl("assets/characters/high-mage-anubisius.jpg");
-		mountainMage.setImageUrl("assets/characters/mountain-mage.jpg");
-		highMageAtenza.setImageUrl("assets/characters/high-mage-atenza.jpg");
-		desertMage.setImageUrl("assets/characters/desert-mage.jpg");
-		highMageMartis.setImageUrl("assets/characters/high-mage-martis.jpg");
-		meadowMage.setImageUrl("assets/characters/meadow-mage.jpg");
-		highMageKepura.setImageUrl("assets/characters/high-mage-kepura.jpg");
-		labyrinthMage.setImageUrl("assets/characters/labyrinth-mage.jpg");
-		seto2.setImageUrl("assets/characters/seto-2.jpg");
-		sebek.setImageUrl("assets/characters/sebek.jpg");
-		neku.setImageUrl("assets/characters/neku.jpg");
-		heishin2.setImageUrl("assets/characters/heishin-2.jpg");
-		seto3.setImageUrl("assets/characters/seto-3.jpg");
-		darkNite.setImageUrl("assets/characters/dark-nite.jpg");
-		nitemare.setImageUrl("assets/characters/nite-mare.jpg");
-		duelMasterK.setImageUrl("assets/characters/duel-master-k.jpg");
+	
 
-		// DECK
-		Deck deck1 = new Deck(simonMuran);
-		Deck deck2 = new Deck(teana1);
-		Deck deck3 = new Deck(jono1);
-		Deck deck4 = new Deck(villager1);
-		Deck deck5 = new Deck(villager2);
-		Deck deck6 = new Deck(villager3);
-		Deck deck7 = new Deck(seto1);
-		Deck deck8 = new Deck(heishin1);
-		Deck deck9 = new Deck(rexRaptor);
-		Deck deck10 = new Deck(weevilUnderwood);
-		Deck deck11 = new Deck(maiValentine);
-		Deck deck12 = new Deck(banditKeith);
-		Deck deck13 = new Deck(shadi);
-		Deck deck14 = new Deck(yamiBakura);
-		Deck deck15 = new Deck(maximillionPegasus);
-		Deck deck16 = new Deck(isis);
-		Deck deck17 = new Deck(setoKaiba);
-		Deck deck18 = new Deck(mageSoldier);
-		Deck deck19 = new Deck(jono2);
-		Deck deck20 = new Deck(teana2);
-		Deck deck21 = new Deck(oceanMage);
-		Deck deck22 = new Deck(highMageSecmeton);
-		Deck deck23 = new Deck(forestMage);
-		Deck deck24 = new Deck(highMageAnubisius);
-		Deck deck25 = new Deck(mountainMage);
-		Deck deck26 = new Deck(highMageAtenza);
-		Deck deck27 = new Deck(desertMage);
-		Deck deck28 = new Deck(highMageMartis);
-		Deck deck29 = new Deck(meadowMage);
-		Deck deck30 = new Deck(highMageKepura);
-		Deck deck31 = new Deck(labyrinthMage);
-		Deck deck32 = new Deck(seto2);
-		Deck deck33 = new Deck(sebek);
-		Deck deck34 = new Deck(neku);
-		Deck deck35 = new Deck(heishin2);
-		Deck deck36 = new Deck(seto3);
-		Deck deck37 = new Deck(darkNite);
-		Deck deck38 = new Deck(nitemare);
-		Deck deck39 = new Deck(duelMasterK);
+		/*List<String> guardianStars = getContentFromFile("files/data/card/guardian-stars.txt");
+		guardianStars.forEach((star) -> {
+			String[] stars = star.split(",");
+			if (stars.length == 2) {
+				System.out.println(GuardianStar.toEnum(stars[0]));
+				System.out.println(GuardianStar.toEnum(stars[1]));
+			}
+		}) ;*/
 		
-		// CARD
-		Card c001 = new Card("001", "Blue-eyes White Dragon", "", CardType.MONSTER, MonsterType.DRAGON, 8, 3000, 2500, "89631139", 999.999);
-		Card c002 = new Card("002", "Mystical Elf", "", CardType.MONSTER, MonsterType.SPELLCASTER, 4, 800, 2000, "15025844", 160);
-		Card c003 = new Card("003", "Hitotsu-me Giant", "", CardType.MONSTER, MonsterType.BEAST_WARRIOR, 4, 1200, 1000, "76184692", 70);
-		Card c004 = new Card("004", "Baby Dragon", "", CardType.MONSTER, MonsterType.DRAGON, 3, 1200, 700, "88819587", 999.999);
-		Card c005 = new Card("005", "Ryu-kishin", "", CardType.MONSTER, MonsterType.FIEND, 3, 1000, 500, "15303296", 30);
-		Card c006 = new Card("006", "Feral Imp", "", CardType.MONSTER, MonsterType.FIEND, 4, 1300, 1400, "41392891", 140);
-		Card c007 = new Card("007", "Winged Dragon #1", "", CardType.MONSTER, MonsterType.DRAGON, 4, 1400, 1200, "87796900", 999.999);
-		Card c008 = new Card("008", "Mushroom Man", "", CardType.MONSTER, MonsterType.PLANT, 2, 800, 600, "14181608", 30);
-		Card c009 = new Card("009", "Shadow Specter", "", CardType.MONSTER, MonsterType.ZOMBIE, 1, 500, 200, "40575313", 15);
-		Card c010 = new Card("010", "Blackland Fire Dragon", "", CardType.MONSTER, MonsterType.DRAGON, 4, 1500, 800, "87564352", 80);
-		
-		// CARD DESCRIPTION
-		c001.setDescription("An extremely rare card with unsurpassed attack and defense power.");
-		c002.setDescription("A delicate elf that lacks in offence but has terrific defense backed by mystical power.");
-		c003.setDescription("A one-eyed behemoth with thick, powerful arms made for delivering punishing blows.");
-		c004.setDescription("Much more than just a child, this dragon is gifted with untapped power.");
-		c005.setDescription("A very elusive creature that looks like a harmless statue until it attacks.");
-		c006.setDescription("A playful little imp that lurks in the dark, waiting to attack an unwary enemy.");
-		c007.setDescription("A dragon commonly found guarding mountain fortresses. Its signature attack is a sweeping dive from out of the blue.");
-		c008.setDescription("Found in moist areas, this monster launches poison spores against its enemies.");
-		c009.setDescription("Ghostly beast that appears in the wasteland and is particularly troublesome when faced in large numbers.");
-		c010.setDescription("A dragon that dwells in the depths of darkness. Its defensive capability suffers from its poor eyesight");
-		
-		// CARD IMAGE URL
-		c001.setImageUrl("assets/cards/001.jpg");
-		c002.setImageUrl("assets/cards/002.jpg");
-		c003.setImageUrl("assets/cards/003.jpg");
-		c004.setImageUrl("assets/cards/004.jpg");
-		c005.setImageUrl("assets/cards/005.jpg");
-		c006.setImageUrl("assets/cards/006.jpg");
-		c007.setImageUrl("assets/cards/007.jpg");
-		c008.setImageUrl("assets/cards/008.jpg");
-		c009.setImageUrl("assets/cards/009.jpg");
-		c010.setImageUrl("assets/cards/010.jpg");
-		
-		// CARD GUARDIANS
-		c001.setGuardians(setGuardianStar(GuardianStar.SUN, GuardianStar.MARS));
-		c002.setGuardians(setGuardianStar(GuardianStar.SUN, GuardianStar.JUPITER));
-		c003.setGuardians(setGuardianStar(GuardianStar.MOON, GuardianStar.MARS));
-		c004.setGuardians(setGuardianStar(GuardianStar.URANUS, GuardianStar.SUN));
-		c005.setGuardians(setGuardianStar(GuardianStar.SATURN, GuardianStar.MARS));
-		c006.setGuardians(setGuardianStar(GuardianStar.MOON, GuardianStar.JUPITER));
-		c007.setGuardians(setGuardianStar(GuardianStar.SATURN, GuardianStar.MOON));
-		c008.setGuardians(setGuardianStar(GuardianStar.JUPITER, GuardianStar.SUN));
-		c009.setGuardians(setGuardianStar(GuardianStar.MOON, GuardianStar.SATURN));
-		c010.setGuardians(setGuardianStar(GuardianStar.MERCURY, GuardianStar.MOON));
-
 		// GAME CHARACTER --> DECK
-		simonMuran.setDeck(deck1);
+		/*simonMuran.setDeck(deck1);
 		teana1.setDeck(deck2);
 		jono1.setDeck(deck3);
 		villager1.setDeck(deck4);
@@ -257,11 +171,11 @@ public class MockDatabase {
 		seto3.setDeck(deck36);
 		darkNite.setDeck(deck37);
 		nitemare.setDeck(deck38);
-		duelMasterK.setDeck(deck39);
+		duelMasterK.setDeck(deck39);*/
 		
 		// LISTS
 
-		List<GameCharacter> characters = new ArrayList<>();
+		/*List<GameCharacter> characters = new ArrayList<>();
 		characters.addAll(Arrays.asList(simonMuran, teana1, jono1, villager1, villager2));
 		characters.addAll(Arrays.asList(villager3, seto1, heishin1, rexRaptor, weevilUnderwood));
 		characters.addAll(Arrays.asList(maiValentine, banditKeith, shadi, yamiBakura, maximillionPegasus));
@@ -269,26 +183,53 @@ public class MockDatabase {
 		characters.addAll(Arrays.asList(oceanMage, highMageSecmeton, forestMage, highMageAnubisius, mountainMage));
 		characters.addAll(Arrays.asList(highMageAtenza, desertMage, highMageMartis, meadowMage, highMageKepura));
 		characters.addAll(Arrays.asList(labyrinthMage, seto2, sebek, neku, heishin2));
-		characters.addAll(Arrays.asList(seto3, darkNite, nitemare, duelMasterK));
+		characters.addAll(Arrays.asList(seto3, darkNite, nitemare, duelMasterK));*/
 		
-		List<Deck> decks = new ArrayList<>();
+		// GAME CHARACTER IMAGE URL
+		/*List<String> charactersImageUrls = getContentFromFile("files/game-characters-image-urls.txt");
+		for (int index = 0; index < characters.size(); index++) {
+			GameCharacter character = characters.get(index);
+			character.setImageUrl(charactersImageUrls.get(index));
+		}*/
+		
+		
+		/*List<Deck> decks = new ArrayList<>();
 		decks.addAll(Arrays.asList(deck1, deck2, deck3, deck4, deck5, deck6));
 		decks.addAll(Arrays.asList(deck7, deck8, deck9, deck10, deck11, deck12));
 		decks.addAll(Arrays.asList(deck13, deck14, deck15, deck16, deck17, deck18));
 		decks.addAll(Arrays.asList(deck19, deck20, deck21, deck22, deck23, deck24));
 		decks.addAll(Arrays.asList(deck25, deck26, deck27, deck28, deck29, deck30));
 		decks.addAll(Arrays.asList(deck31, deck32, deck33, deck34, deck35, deck36));
-		decks.addAll(Arrays.asList(deck37, deck38, deck39));
+		decks.addAll(Arrays.asList(deck37, deck38, deck39));*/
 		
-		List<Card> cards = new ArrayList<>();
-		cards.addAll(Arrays.asList(c001));
+		/*List<Card> cards = new ArrayList<>();
+		cards.addAll(Arrays.asList(c001, c002, c003, c004, c005, c006, c007, c008, c009, c010));
+		cards.addAll(Arrays.asList(c011, c012, c013, c014, c015, c016, c017, c018, c019, c020));*/
 		
+		
+		/*List<String> cardDescriptions = getContentFromFile("files/data/card/descriptions.txt");
+		
+		// CARD IMAGE URL - CARD DESCRIPTION - CARD GUARDIAN STARS
+		for (int index = 0; index < cards.size(); index++) {
+			Card card = cards.get(index);
+			card.setImageUrl(String.format("assets/cards/%s.jpg", card.getNumber()));
+			card.setDescription(cardDescriptions.get(index));
+			
+			String guardians = guardianStars.get(index);
+			String[] stars = guardians.split(",");
+			if (stars.length == 2) {
+				GuardianStar primary = GuardianStar.toEnum(stars[0]);
+				GuardianStar secondary = GuardianStar.toEnum(stars[1]);
+				card.setGuardians(setGuardianStar(primary, secondary));
+			}
+		}*/
+
 		gameCharacterRepository.saveAll(characters);
 		deckRepository.saveAll(decks);
 		cardRepository.saveAll(cards);
 		
 		// DECK - CARD
-		Card[] cards1 = { c001 };
+		/*Card[] cards1 = { c001 };
 		Card[] cards2 = { c001 };
 		
 		List<DeckCard> deckCards1 = fillDeckCards(deck1, cards1);
@@ -301,7 +242,7 @@ public class MockDatabase {
 		List<DeckCard> deckCards = new ArrayList<DeckCard>();
 		deckCards.addAll(deckCards1);
 		deckCards.addAll(deckCards2);
-		deckCardRepository.saveAll(deckCards);
+		deckCardRepository.saveAll(deckCards);*/
 	}
 	
 	private List<DeckCard> fillDeckCards(Deck deck, Card[] cards) {
@@ -322,5 +263,25 @@ public class MockDatabase {
 		}
 		
 		return new HashSet<>();
+	}
+	
+	private List<String> getContentFromFile(String path) {
+		List<String> content = new ArrayList<>();
+		
+		try {
+			String line = "";
+			try (FileReader reader = new FileReader(path)) {
+				try (BufferedReader bufferedReader = new BufferedReader(reader)) {
+					while ((line = bufferedReader.readLine()) != null) {
+						content.add(line);
+					}
+				}
+			}
+		} 
+		catch (Exception e) {
+			System.out.println(e);
+		}
+		
+		return content;
 	}
 }
