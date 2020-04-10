@@ -1,20 +1,722 @@
-An extremely rare card with unsurpassed attack and defense power.
-A delicate elf that lacks in offence but has terrific defense backed by mystical power.
+An extremely rare card with Unsurpassed attack and defense Power.
+A delicate elf that lacks in offence but has terrific Defense backed by mystical power.
 A one-eyed behemoth with thick, powerful arms made for delivering punishing blows.
 Much more than just a child, this dragon is gifted with untapped power.
-A very elusive creature that looks like a harmless statue until it attacks.
+A very elusive creature that looks like a harmless statue untill it attacks.
 A playful little imp that lurks in the dark, waiting to attack an unwary enemy.
 A dragon commonly found guarding mountain fortresses. Its signature attack is a sweeping dive from out of the blue.
 Found in moist areas, this monster launches poison spores against its enemies.
 Ghostly beast that appears in the wasteland and is particularly troublesome when faced in large numbers.
-A dragon that dwells in the depths of darkness. Its defensive capability suffers from its poor eyesight
-With a body covered in sword-like thorns, nothing dares stand in the way of this monster when it changes.
+A dragon that dwells in the depths of darkness. Its defensive capability suffers from its poor eyesight.
+With a body covered in sowrd-like thorns, nothing dares stand in the way of this monster when it changes.
 This creature is armed with a spiked club that can destroy almost anything in its path. Rumored to have a brother that is just as destructive.
 Capable of firing cannonballs from its mouth for long range attacks against enemies.
-A bull monster often found in the woods. Charges enemy monsters with a pair of razor-sharp horns.
+A bull monster often found in the woods. Charges enemy monsters with a pair of Razor-sharp horns.
 A fighter gifted with the power of fire. Attacks enemies with a sword that launches flames.
-A sorcerer capable of bending time to his will. Though not powerful at first glance, appearances can be deceiving.
-A forbidden limb sealed by magic. Who ever breaks this seal will know infinite power. Only one card of this type can be included in a deck.
-A forbidden limb sealed by magic. Who ever breaks this seal will know infinite power. Only one card of this type can be included in a deck.
-A forbidden limb sealed by magic. Who ever breaks this seal will know infinite power. Only one card of this type can be included in a deck.
-A forbidden limb sealed by magic. Who ever breaks this seal will know infinite power. Only one card of this type can be included in a deck.
+A sorcerer capable of bending time to his will. Though not powerfull at first glance, appearances can be deceiving.
+A forbidden limb sealed by magic. Who ever brakes this seal will know infinite power. Only one card of this type can be included in a deck.
+A forbidden limb sealed by magic. Who ever brakes this seal will know infinite power. Only one card of this type can be included in a deck.
+A forbidden limb sealed by magic. Who ever brakes this seal will know infinite power. Only one card of this type can be included in a deck.
+A forbidden limb sealed by magic. Who ever brakes this seal will know infinite power. Only one card of this type can be included in a deck
+Once combind with arms and legs, this monster is freed from its magical chains. Only one card of this type can be included in a deck.
+An entity with dark powers for confusing the enemy. Among the FIEND class of monsters, this is a pretty rare card.
+A monster worm created by the darkness. It suddenly appears from under the ground to attack its enemies.
+A skeletal ghost that isn't strong but cn mean trouble in large numbers.
+A small imp that dwells in the dark. Its single horn makes it a formidable opponent.
+A monster with tremendous power. Destroys enemies with a swing of its axe.
+What this creature lacks in size, it makes up for in defense when battling in the meadow.
+Protected by a solid body of rock, this creature throws a bone-shattering punch.
+A solid warrior that can move swiftly over rough terrain.
+A deceptively fragile-looking skeleton warrior that is known for its swift and precise attacks.
+A vicious, Fire-breathing dragon whose wicked flames corrupt the souls of its victims.
+An unusual and rarely seen two headed dragon
+For this club-wielding warrior, there is no other outcome to battle than victory or defeat.
+This clown appears out of nowhere and executes some very strange moves to avoid enemy attacks.
+The ultimate wizard in terms of attacks and defense.
+A monster with the head of a poisonus snake. One look will turn an unwary opponent to stone.
+A warrior's prowess combines with a dragon's speed to create a powerful offensive force.
+A knight mounted on a horse that travels faster than the wind. His battle charge is a force to be reckoned with.
+A wicked dragon that taps dark forces to execute a powerfull attack.
+A jar carved with strange patterns. It has a particularly  high defense factor.
+An elf, who learned to wield a sword, bffles enemies with lightning attacks.
+Manipulated enemies attacks with the power of illusion. A very rare card.
+A very average looking fighter with an unusually high attack factor.
+A unique doll gifted with mystical power. Particularly powerful when attacking against dark forces.
+Attacks its enemies with thunder.
+This creature's tough hide deflects just about any attack.
+Not as tough as it looks in terms of defense. This monster's sharp horn gives it an edge when attacking.
+A compact, three-eyed monster that is dangerous when faced in the dark.
+A giant ant that dwells in the jungle. Powerful in terms of both ATK and DEF factor.
+Usually found travelling in swarms, this creature's ideal enviroment is the forest.
+A lizard with a very tough hide and a very vicious bite.
+A massive beetle with a tough hide and a dangerous horn.
+A huge bee with exceptional strength. Particularly Dangerous when a swarm is encountered.
+A large, spherical roach that attacks its enemies by rolling over them. Its tought defense makes it formidable foe.
+A giant blood-sucking flea that's devastating when attacking.
+Not much in its larval from, this creature is a force to be reckoned with when it grows to become a colossal moth.
+A powerful creature of the forest, this huge moth attacks its enemies by spreading  poison dust with its wings.
+By itself, this creature may not seem like much. But in the dark, it attacks in numbers as a formidable force.
+A mammoth that protects the gravesite of its pack. It's absolutely merciless when facing graverobbers.
+A giant white shark with razor-sharp teeth.
+A rarely seen wolf with a powerful nose for catching the scent of an enemy
+A human-shaped animal with wings. Beautiful to watch, but lethal when engaged in battle.
+Three fierce sisters who relentlessly attack as a team.
+A fast and powerful axe-wielding beast warrior.
+A snow wolf that's beautiful to the eye but absolutely vicious in battle.
+A man hunter with powerful arms that can crush boulders.
+The final incarnation of the ultimate insect, the Great Moth!
+An axe-swinging beast warrior with the head of a dragon.
+A dragon that has grown and developed over a thousand years.
+A massive squid that suddenly appears from the depths of the sea to attack unwary enemies.
+An almost invisible, semi-transparent jellyfish that drifts in the sea.
+This creature is capable of instantly evolving larvae into adults.
+A sea dragon that's referred to as the "King of the Ocean". It attacks its enemies with huge tidal waves.
+A giant warrior made of stone. A punch from this creature has earth-shaking result.
+A meat-eating plant that is attractive to the eye but dangerous when approached.
+A vicious crocodile with intelligence. Hard scales from a natural armor for this creature.
+A devious snake with a think body that wraps around an enemy monster and squeezes the life out of it.
+An axe-wielding  monster of tremendous strength and agility.
+Nothing stands in the way of this spike-covered dinosaur.
+Fast on its feet, this dinosaur rips enemies to shreds with its sharp claws.
+A powerful dragon with teeth that can grind almost anything to dust.
+A very rare card with high-level ATK factor.
+A creature that can generate darkness to envelop all that exists around it.
+This monster boasts a strong defense and  massive scythe that cuts through almost anything.
+Wields thw power of darkness to destory its enemies.
+This creature flies throught the dark, attacking its enemies with its long, hairy arms.
+A fire-breathing monster that dwells in the netherworld.
+A fiend guarding the treasure of the netherworld. Its defense is particularly high in a dark environment.
+Well-protected by its shell, this monster flings projetiles from its catapult.
+Uses her mystical power to protect the weak and provide spirtual support
+Half man and half horse, this monster is known for its extreme speed.
+A powerful and unstoppable comination of bull and horse.
+Prefers to face enemies one-on-one. His swiftly drawn blade delivers a quick and immediate finnish.
+A weakened dragon that can no longer fly, but it still a formidable force to be reckoned with.
+A preformer in the dark circus, this clown drains the strength of its enemies with strange dances.
+A warrior raised from the beyond. Blindly swings a sharp blade with devastation force.
+A dragon revived by sorcery. Its breath is highly corrosive.
+A clown revived by the powers of darkness. Its strange dance has sent many monsters to their ends.
+This pumpkin king strikes at its enemies with its long tenticles.
+A warrior that fights with his bare hands.
+Soaring over its enemies on wings of crimson fire, this monster attacks by blasting flames from its body.
+A shadow mask created by the hands of a dark mage.
+An indestructible, wicked mirror that blocks enemy attacks.
+A curtian woven by the hands of a sorcerer. It is said to enhance the power of magic-users.
+A deceivingly small creature that is so vicious it attacks bth friend and foe without discretion
+A spirit of the wind that freely sails the skies. Known to generate storms when it's in a bad mood.
+Uses both physical and shadow forms to attack, making it a difficult creature to overcome.
+A final resting place that enhances the power of the doomed and drains that of the living.
+A goddes with an all-seeing eye that reveals all.
+A samurai from the Far east armed with a razor-sharp sword.
+This angel rules over the doomed and administers it when necessary.
+A vile monster that fuels it power by draining the essence of life from its opponents.
+Entirely gray, this beast has rarely been seen by mortal eyes.
+A gentleman thief that eludes the law despite the fact that he sticks out like a sore thumb wit his silk hat and white cape.
+A magic-user that controls chaos and wields a mighty sickle.
+A very toxic creature that induces nightmares and attacks its victims with its victims with four poison- tipped stingers.
+A spirit of the book with infinite knowledge and an endless variety of attack stratrgies.
+A cute elf that assists against enemies while remaining hidden from sight.
+Passes judgement on enemies that are locked in coffins.
+The mysterious dance of this creature draws its enemies into eternal slumber.
+Frequently found sleeping, this monster is very dangerous when awakened.
+This dragon is conjured from a picture scroll to attack enemies. It has a pretty low defense factor.
+A vicious flower raised from polluted soil and fertilized by dark forces.
+An engine of destruction discovered in the ruins of an ancient civilization.
+A bird with a very long tail that attacks with a light that emanates from its entire being.
+A mysterious creature known as the king of warriors, but nobody has lived to tell how it earned its reputation.
+A silent and swift warrior
+A sorcere who lives on the moon and attacks opponents with the power of lunar light.
+A child-like creature that controls a slepp spirit to beckon enemies into a eternal slumber.
+This monster is capable of manipulating the weather. This power is the reason behind the changing climate of mountains.
+A strange creature with the head of a fish and the tentacles of a octopus that
+A zombie that suddenly appeared from plot #13- supposedly an empty plot.
+A warrior protected by a shell that can even deflect the heat of burning flames.
+A mystical chain that is believed capable of binding its enemies and preventing their attacks.
+Long arms reach out from the swamp of chaos to drag in enemy creatures.
+Dressed in a night-black tuxedo, this creature presides over the doomed.
+Twisting the fabric of reality, arms stretch out from another dimension to attack opponents.
+A granite Warrior with a dragon's soul wields a powerful sword against all enemies.
+A creature rumored to turn enemies in to zombies with a strange ray that emanates from its eyes
+Thousands of years old, this frog wizard attacks enemies with an army of tadpoles.
+Evolving from the powers of darkness, this snail has arms and legs that allow swift attacks against its enemies.
+Attacks enemies with fire-related spells, such as the "Sea of Flames" and  "Wall of fire".
+The first in a line of golems that appear almost from with in a dimensional ring.
+Controls the air currents to create violent winds and tornadoes to blow away its enemies.
+A flashy, black-caped thief who wields a magic cane.
+A weird temple of skulls and bones that sucks the living essence of all those who dare approach it.
+Awarrior hidden within an egg that attacks enemies by flinging eggshells.
+A living shadow that dwells in the realm of darkness. It paralyze its enemies to prevent attacks.
+A giant that appears from a nystic lamp and follows the orders of the lamp's owner.
+A mysterious creature that dwells below the sea.
+A warrior armed with the sword of crimson flames. Uses fire to bind the movement of its enemies.
+A creature that melts into the earth then melds with an opponent's shadow, and
+A living spirit that preys on the living essence of enemies.
+A creature that deals out punishment with its flaming arrows.
+A fast-moving, bird-like creature that strangles an opposing monster with its long, thin arms.
+A living suit of armor that attacks enemies with a bone-jarring tackle.
+A fire-breathing plant found growing near volcanoes.
+Man-eating plant with poison feelers for attacking enemies.
+Coiling its serpent-like body, this creature spins ans attacks with its snapping beak.
+Specializing in combination attacks, this warrior uses magnetism to block an enemy's attack.
+Specializing in combination attacks, this warrior  is equipped with a tough, magnetically coated armor.
+A parasite brain that preys on the knowledge and intelligence of its opponents.
+An unusual creature with sapphire eyes that creatures visions to confuse to enemy.
+A vile entity that deceives enemies into walking the path of destruction
+The hand of final judgement is capable of intense attacks against the enemy.
+A pupprt master that manipulates enemies during battle.
+A fragile jar from the past cotaining a mysterious creature.
+Scorching flames that whip out enemies in a blick of an eye.
+King of the netherworld. It's said that he once had the power to rule over the dark.
+A spirit that soothes the soul with music of its glorious harp.
+This creature is coverd with hypnotic eyes for mezemerizing its enemies.
+A strange warrior who manipulates three fearsome blades with both hands and its tail.
+This creature manipulates light to eliminate all traces of its appearance.
+A twister that runs rampant in the wastelands, cutting its enemies with blades of wind.
+Exiled from reality, this creature is adept at fighting in the dark.
+A winged eye enveloped in flames that attacks enemies with fire.
+A vicious turtle with a spiked shell.
+Dtretching arms and razor-sharp  claws make thi monster a formidable opponent.
+A wizard that freezes an enemy's movement with a single curse.
+A maiden in the flower blossoms spreads poisonous pollen against opponents.
+Emits a dazzling light from its crystal to blind its enemies.
+A dancing warrior that makes mincemeat out of opponents with a sharp scythe.
+A thin and reedy creature Protected by sacred power.
+Uses amazing sleight-of-hand t fool an destroy enemies.
+This warior confuses and destorys enemies by adopting  thier image.
+A bird-beast that summons reinforcments with a hand mirror.
+A creature with an abdominal portal used for summoning monsters from the netherworld.
+An ugly creature with two heads and a mouth for blasting laser beams.
+A monsterous cat with wings and a long stricking tail.
+A wizard whose incantations numb the senses of opposing monsters
+Protected by thunder, this dangerous cloud attacks its enemies with acid rain.
+A smallangel whose cuteness melts the hearts of its enemies.
+A tiger encased in a protective shell that attacks its enemies with its razor-sharp fangs.
+Know as a dewllwe of the swamps, this creature is a minion of the dark forces.
+An unpredictable creature that splits in two and attacks the enemy from two opposite directions.
+An ammonite warrior that has protected the seas from the dawn of time.
+A creature of the night that attacks enemies with its rocket-powered arms
+A little angel that fires beams of happiness from the heart jewel on its forehead.
+A penguin-like creature that slides on its belly to deliver a blow with its outstretched sword.
+A very small dragon known for its vicious attacks.
+A savage beast that carries a big bamboo stick for beating down its enemies.
+A horned Beaver with wings that throw high-velocity acorns from the sky with uncandy accuracy.
+Malicious spirits that walk the world of the living, unable to find thier final resting place.
+A cannon-like monster that rapidly fires eyeballs at the enemy.
+An ugly, Melting creature that breathes out poison gas.
+This creature swings its whip-like arms  for mid range attacks against the enemies.
+With a battle cry that curdles the blood of its opponent, this creature attacks with its massive beak.
+A quick-moving and tiny angel that's very difficult to hit.
+This creature attacks by swinging around its sickle-like arms.
+An intensely hot flame creature that rams anything that stands in its way.
+This creature stores lightning within its body to deliver electrifying attacks.
+A huge monster with a single eye that fires an intence beam.
+A wizard of the waters that conjures up a liquid wall to crush any enemies that oppose him.
+Serves as a double for the ruler of the blue flame. A master swordsman that wields a fine blade.
+A fiery spirit that burns anything in its path.
+A spirit of the forest protected by the surrounding plant life.
+A very rare creature from the fusion of uncommon beast and Vicious dragon.
+A Dinosaur with two crushing jaws. Stores electricit in its horn and releases high voltage bolts from the back mouth on its head.
+A beast-warrior that swings a massive scythe that draws on the spirit of its enemies to deliver devastating blows.
+A mysterious wizard whose face remains forever hidden behind a strange mask.
+A massive, intelligent spider that traps its enemies with webbing.
+A winged creature rumored to appear at midnight
+A massive sea serpent that creates tidal waves to wipe out its enemies.
+A warrior that excels in laying traps such as a bottomless pit, for eternally ensnaring opponents.
+Few have escaped the creature. Those that have done so have gained untold power.
+Swift and vicious, this monster grabs its victim with its pincers and attack the captive with its poison stinger.
+A vicious starfish that spits acid to melt away its enemies.
+A zombie that rose from the remains of the woodland ruler.
+A creature that allows power to be gained at the cost of life.
+An unusual and ferocious fish with the head of a beast
+An unpleasantly smiling ceature that wields a scythe to avoide enemy blows.
+A living weapon that fires projectiles from its mouth.
+A spirit said to dwell in the world of dreams. Attacks enemies in their sleep.
+A lovely swordmaster with some very agile moves.
+A warrior that has long resided in the forest and enjoys the Protection of Mother Nature.
+A warrior that guards the entrance to the netherworld.
+An earthen doll that protects the treasure ing the tombs of the ancient kings.
+A palm tree with a will of its own that attacks enemies by flinging coconuts.
+A woman warrior that serves the forces of darkness.
+An eyeball creature with legs for  jumping high and delivering finishing blows with its sharp claws.
+armed with psycho sword, this sinister cutthroat rules the outer lands.
+An opponent's fate is decided when the flames of each finger are extinguished.
+A water spirit that envelops its opponent in a think fog to cover its attack.
+A monster borne from the lava pits. Generates intensive  heat that can melt away its enemies.
+An eyeball fiend created by a servant of darkness. Uses "dark spheres" to blow away its enemies.
+A creature with a sword that gains its power from the life forces of its victims.
+An amphibian capable of calling up a massive tidal wave from the dark seas to wipe out enemy monsters.
+A fearsome duo consisting of a beast master and its loyal servant.
+transforms the water overflowing from a jar into attacking dragon.
+An ice warrior whose slightest touch freezes an opponent.
+A beautiful mermaid that lures voyagers to a watery grave.
+A cat creature that loos cute but delivers scratching blows with its sharp claws.
+A creature that chose the path of sorcery to become a witch.
+A repulsive monster with a gaping belly that swallows almost anything.
+This monster is shielded by a hide covered in thick hair.
+A monster capable of creating dimensional rifts to trap its enemies.
+With a body armored by rock hard fur, This monster features excellent defense capabilities.
+This creature changes the ground at its feet into quicksand to ensnare its enemies.
+A master fighter that uses various staffs to render enemies unconscious.
+A lovely moon goddess that can throw up a lunar curtain to block attacks.
+A malevolent mirror that hypnotizes a beholder and renders the victim susceptible to attacks
+an elf warrior mounten on a huge lizard.
+A stone golem that turns opponents in to rocks and thn crushes them.
+Hiding within is eggshell, this creature blocks enemy attacks with its massive wings.
+Grand king of the seven seas. Able to summon massive tidal waves to drown the enemy.
+A queen of swords that is virtually unequalled in her mastery of every blade to man
+The speed of this warrior creates an intense vacuum that can actually slice threw a monster's hide.
+A sorcerer that worships the dark forces and can summon a massive hand to drag away opponents into the netherworld.
+A lord of destruction born from the heart of darkness, this creature can summon storms to destroy opponents.
+A rai spirit that can summon typhoons to blow away its enemies.
+This creature's ominous eyes can unleash piercing rays against its enemies.
+Related to the phoenix, this creature dwells in the mountains. Its fiery breath is extremely scorching.
+Related to the phoenix, this creature dwells in  this fiery breath is extremely scorching.
+This youthful king of the forests lives in a green world, abundant with trees and wildlife.
+A Land-based armored robot that is said to once have marine attack capabilities.
+The sun and the north wind join hands to deliver devastating combination of heat and gale-force winds.
+A gorgon's egg with eyes said to create whatever creature crosses its view.
+Nobody has any idea what creature may spawn from this mysterious larva.
+A specture that dwells in a binding curtain of smoke.
+A creature that protects the king's throne from usurpers.
+Nothing can stop the mad attack of this powerful creature.
+A monstrous sheep with a long tail for hypnotizing enemies to render them powerless.
+A monster machine that generates images to confuse its enemies, making them prone to attacks.
+A magic user that corrodes the yin and yand to create a twisted power to attack enemies.
+A snake with a single eye that blows an icy breath to freeze it opponents.
+An indestructible machine built to protect key entrances.
+An ogre possessed by the powers of the dark. Few can withstand its rapid charge.
+a demented artist that creates objects D'art to cruch enemies.
+A shape-shifting slime that is capacble of adopting the form of other creaturns.
+A sevant of the moon goddess, This warrior wields a pike with a spectacular crescent-shaped blade.
+A malevolent creature wrapped in flames that attack enemies with intense fire.
+An amphibian with extrasensory powers for blocking attacks.
+Legendary swordmaster and a veteran of over 100 battles.
+A warrior wquippe with equipment fashioned from dragon scales.
+A monstrous creature born from failed lab experiment.
+This dragon wears a shield not only for protection but also for ramming its enemies.
+An unstoppable mechanical soldier powered by dark forces.
+A two-headed dragon with a pair of  Vicious jaws for crushing its enemies.
+A maiden that uses sound to her advantage. She wields a scythe that's shaped like a musical note.
+A visious bird that attacks from the skies with its whip-like tail.
+A sword that brings out the best in warriors. It cannot be used by sevants of the dark.
+Dark forces increase the power of warriors.
+Dark forces increase the power of fiends and other monsters of the dark!
+Fiends and beast warriors can constanly use their maximum strength!
+Arms insect with a powerful laser!
+Allows Insects to fire an intense blast of fire!
+Increases the power of elves with mystical light!
+In creases the power of beasts and other fanged monsters!
+Boosts the power of shelled monsters! said to have no effect on those without shells.
+Vile microbes bosst the power of plants in the woods!
+This pendant grants extra power to dark sorcerers!
+Silver bow and arrow enchantes the power of fairies.
+Increases the power of horned creatures! Has no effect on dark monsters
+Increases the Power of dark monsters with horns!
+A legendary treasure that increases the power of dragons.
+A whip for paralizing enemies. Increase power when equopped with female creatures.
+Increases the power of female monsters by changing their attitudes.
+Creates two doppekgangers of Harpy lady  for three-pronged attacks!
+Moonlight increases the power of beasts!
+Forces an opponent's monster cards for defense into the attack position.
+Diabolic forces act to increase the power of female and dark monster
+Mystic forces from the crystal increase the power of zombies
+A magic book for increasing the power of magic-users. It cannot used by bad-hearted sorcerers.
+Increases the power of thunder, Rock, and Pyro monsters!
+A manufacturing facility that tunes up all machine monsters.
+Absorbs the sun's energy to increase the power of dinosaurs!
+the wind provide support to increase the power of winged beastsand other flying monsters.
+Poseidon's strength is shared to boost the power of aqua, fish, and sea serpent monsters!
+Destroy all opponent dragon monsters on the playfeild!
+Changes the feild in favor of beast-warrior, insect, plant, and beast monsters!
+Changes the fiels in favor of zombie, dinosaur, and rock monsters!
+Changes the feild  in favor of Dragons, winged-beast, and thunder monsters!
+Changes the field  to meadow land in favor of Warrior and beast-warrior monsters!
+Changes the  feild in favor of aqua and thunder monsters, but unfavorable to machine and pyro monsters!
+Changes the field in favor of Magic-user and feind monsters, but unfavorable to fairy monsters.
+Sucks up every card in play on the feild!
+Destroy every opposing monster with a stroke of lightning.
+A delicious beef curry increases Life points by 200!
+A magic potion that increases Life points by 500!
+Goblin's herb that increases Life points by 1000!
+A Fairy potion that increases Life points by 2000!
+A Mystical power that increases Life points by 5000!
+A shower of sparks inflicts 50 points of damage to your opponents life points!!
+A fireball inflicts  100 points of damage to your opponents life points!!
+A flame inflicts 200 points of damage to your opponents life points!!
+A flame inflicts 500 points of damage to your opponents life points!!
+A flame inflicts 1000 points of damage to your opponents life points!!
+Enemy monsters are revealed and your opponent cannot attack for three turns.
+A curse reduces the power of all enemy monsters!
+A dazzling lioght reveals all monsters on the playing feild.
+A monster that attacks anybody who attempts to open its lid.
+A lady swordsman that floats like a butterfly and sings like a bee.
+A finned creature disantly related to sea dragons
+A deceptively cute stuffed animal that bites.
+A cryptic doomsday machine that comes from the edge of the universe
+A very vicious lion with sharp and long claws.
+A three-headed, fire-breathing monster.
+A sacred dragon that burns away wickedness with its mystical flames.
+Bony and Tubby, a friendly pair of skeletons.
+A huge, brutal monster that attacks with razor-sharp claws.
+A rare penguin that flies with the wings on its head.
+A Millennium Item candidate that is said to block any powerful attacks.
+flies around speading happiness to all.
+A powerful warrior with the same capabilities as the legendary Blue eyes White Dragon.
+An arcane glass that draws its enemies in to the mirror world.
+Walls appear on the field to form a labyrinth with no exit.
+A monster spider that dwells under the earth.
+A dangerous zombie that crawls in the dark.
+An unusually fast monster that sweeps across walls to attack it enemies.
+A tank that races around a labyrinth hunting down its enemies.
+A golem that uses lightning attacker similar to the labyrinth brothers.
+A golem that controls the winds like the labyrinth brothers.
+A golem that uses water attacks like the labyrinth brothers.
+Sanga, Kazejin, and Suijin join to form a single, powerful monster.
+Hidden under the floors of a labyrinth, it swallows any who pass above.
+A master of monsters that exercises control over several creatures.
+Ryu-kishin enhanced by the power of darkness. Very sharp talons make it a worthy opponent.
+A monster formed by the vengenful souls of those passed away in battle.
+A genie of the lamp that's at the beck and call of its master.
+The Ultimate dragon formed by the fusion of the three Blue-eyes white dragon.
+An alligator monster straight from the cartoon.
+With an axe in each hand, this monster delivers heavy damage.
+A dragon from the cartoons that's more dangerous than it appears to be.
+A cartoon rabbit that quickly leaps all over the place, making it a difficult target.
+A jack-in-the-box that excels in surprise attacks.
+A favorite pet for harpies, but a very dangerous dragon.
+A lamp used by wizards to mix potions.
+A horribe torture machine with a large pendulum
+Armed with a soul-searing spear, this creature favors magic attacks.
+A spider machine that launces explosive rockets against its enemies
+A monster whose full potenial can be achieved when transformed in to its metal form.
+A metallic  Zoa capable of intensive attacks.
+A sea creature that swallows enemies and slowly digests them.
+An iron-tailed monster equipped with very sharp scissors.
+An elf that dances acroos the sky with wings of razor-sharp blades.
+Frightening  in appearance, this creature uses its large eyes and ears to keep track of any movement.
+Not a very powerfull monster despite its large fangs and spikes.
+A monstrous bullfrog with poison spikes.
+An eastern warrior armed with a cursed sword.
+A fire-breathing reptilian monster.
+A bull monster resurrected by the dark arts that appears from inside a jar.
+A servant that maintains a close watch on anything and everything. It throws up a smokescreen when discovered.
+Huge monster with a lion's main similar to the "King of beasts"
+A fast-moving sea monster that has the body of a horse and of a fish.
+A rampaging machine that wields a massive sword.
+A machine with several blades hidden with its square body.
+Armored with super alloy, this robot attacks with blasts of fire launched from both arms.
+This monster swings an earth-shaking axe that can eliminate enemies with a single blow.
+A golden, fire-bearthing dragon that burns any opponent in its path.
+A spider-shaped, mechanized monster with sickles at the end of its legs.
+A mechanized bat that attacks by dropping explosion orbs.
+A wolf made entirely of iron. Its steel jaws can bit through anything.
+Round-shaped soldiers that roll around and act as guardians to the machine king.
+Armed with a pair of shovels, this creature is a walking enging of destuction.
+A hunter that relentlessly pursues its target by order of the Machine King.
+Each separate part of this creature is an individual weapon capable of devastating
+A walking time device that loves to blow enemies away.
+A massive iron golem that appears from a dimensional rift.
+This creature swings around a huge spiked ball to destory its enemies.
+Created in a basement lab, this infurnal machine launches rockets from within its mouth.
+A strike force equipped with radar detectors and sensors.
+created in an underground lab, this artifical being occasionally goes berserk.
+An armadillo-like creature that forms a die whenever it rolls up its body.
+A bird-like dragon with four bladed wings.
+A dragon that summons thunder and lightning to attack its opponents.
+With a body consistinf entirely of rocks, this dragon flings Boulders at its enemies.
+A very powerful dragon emperor.
+Despite its weak strength, this creature is capable of casting spells to eliminate darkness.
+A shy goddess that seems to spend the majority of her time sleeping.
+This creature surrounds opponents with water and envelops them in a sweeping
+A very aggressive mermaid with spikes for attacking enemies.
+A fairy that wonders the seas. Rumored to have the capabilities for summoning sea dragons.
+This elf is rumord to have lived for thousands of years. He leads an army of Spirits against his enemies.
+A rare female magic user armed with a vicious whip.
+A beautiful creature that flings icy arrows.
+A white, horned dolphin that attacks by calling up tidal waves.
+A violent shark that attacks anything and everything in the sea.
+A steel fish armed with a sharp dorsal fin.
+A beautiful swimmer with a very nasty temperament
+A rare rainbow fish that almost impossible to catch.
+This creature carries a plasma cannon on its back.
+A dragon that dwells in the sea. It is capable of spitting high-pressure blasts of water.
+The King of the seas, this creature is protected by a solid shell and spits poisonous bubbles at its enemies.
+A strange, one-eyed monster armed with a dangerous spear.
+A merman warrior that attacks anyone who dares to pollute the sea.
+A creature that drowns its opponents by mesmerizing them with the ball on the end of its tail.
+A sea serpent that bites anything that passes nearby.
+Using the spikes sprouting from its body, this creature stabs its opponents and floods then with electricity.
+A massive and well-protected giant turtle that has lived over 30000 years.
+An amphibian sworn to avenge the death of its brothers.
+A crab monster with two scissors for cutting up enemies.
+A newly evolved crayfish with sharp scissors for clipping the enemy.
+A golem that has protected treasure for nearly millennium.
+A golem With a Massive right hand for crushing its victims.
+A monster that charges into enemies firing a pair of cannons mounted on its shoulders.
+A rock warrior that wields a very heavy sword carved from stone.
+A creature that erupts with anger, resulting in a crushing rain of boulders.
+A monster that judges wrong-doers and punishes them appropriately.
+This creature attacks enemies with electromagnetic wave.
+This creature spits a gooey substance that robs enemies of mobility and then stuns them with electric shocks.
+A monster with a pair of electric whips instead of arms.
+A creature that attacks enemies with thunderbolts.
+a serpent with a tail for storing  electricity.
+a hunter of the skies that has never missed a target.
+A judge of the sky that delivers a sentance with punishing sliver-white claws.
+this monster swoops down and attacks with a rain of knives stored in its wings.
+A monster burning with flames and capable of delivering a rain of spark by flapping its wings
+A creature that attacks its enemies with its large beak.
+A blue ninja that attacks with a large sicckle and spiked feet.
+This creature casts a spell of terror and confusion just before it attacking its enemies.
+This clown feeds the life force of its enemies to a monstrous lizard.
+A monster that suffocates its enemy by feeding on the surrounding air supply.
+a fiery warrior creature that unleases intense heat from its body.
+A cruel monster that slices up enemies with its sharp claws.
+A flying poison snake that is not very good at maneuvering on the ground.
+A spider armed with scissors to attack anything that it traps in its web.
+A stag beetle monster with saw-toothed horn and arms.
+Insect soldiers that attack in swarms.
+A cockroach warrior that hides in small spaces and emerges to attack enemies.
+A violent stag beetle with a rasor-like cutter.
+A clever mouse with a sharpened left claw.
+A very dangerous monster with spikes on its head and tail.
+A malebolent creature that resembles a winged lion.
+A monster that envelops an enemy and slowly digest them.
+This creature rolls massive objects to crush its enemies.
+A book wizard with page after page of potent spells.
+A beast coverd in flowers from head to toe.
+A flower creature with rainbow-colored blossoms that lure an enemy into its waiting jaws.
+A dangerous flower that fire pollen projectiles.
+A ball covered in sharp needles. Usually rains down on enemies in a group.
+A beautiful peacock like creature that fires its feathers at opponents.
+trailed by a beautiful tail, this shooting star inflicts damage when it hit an enemy.
+A wizard dressed in blue who is usual found meditating.
+An unusual mermaid that appears whenever a rainbow bridges the sky.
+A fantastic guitar player that attacks enemies with ultrasonic emissions.
+A ferocious rabbit with sharp claws.
+A hermit crab with the head of a dragon.
+A strange fiend with long arms and razor-sharp talons.
+Attacks by blowing webs at its enemies. Nobody knows whats the final form of this insect might be.
+A fearsome monster sent from the netherworld to destroy dragons.
+A creature that slices and dices with its scissors and feeds off its victims.
+Gifted with the power of dragons, This warrior wields a sword created from a dragon fang.
+A fox-like creature with a protective shell.
+A monster that leaks acid from its pores to melt anything that touches its skin.
+A clear crystal that focuses light to create a powerful lasor beam.
+A huge moth that generates a whirlwind containing poison dust.
+A flying fish with a sharp head for piercing targets.
+A mechanical dinosaur equipped witha beam cannon.
+A colossal dinosaur that stomps on anything that wonders in to its path.
+a laughing flower whose chuckles can drive an enemy mad.
+A plant warrior that attacks with a combination of sword-swings and pea projectiles.
+Highly distructive machine armed with powerful cannon.
+A sentry robot armed with homing rockets for guarding throne rooms from intruders.
+A creature capable of manipulating several scissors with definite results.
+A massive stone idol from Easter Island that fires laser rings from its mouth.
+A monster that angers an opponent to the point that the enemy goes berserk.
+Appears from underground and attacks with long. snake-like tentacles.
+A stone turtle with a very high defense factor.
+A fiery squid that can maintain its flames underwater.
+A rare flying turtle that inhabits the sea.
+The breath from this bird robs creatures of thier life force.
+A huge bird known for its sharp dive attacks.
+Defeated enemies served as ingredients for this gourmet monster.
+An extraterrestrial life form that loves to live in the water.
+Music from this creature's flute can drain an enemy's willpower.
+Armed with a huge Sickle, this monster can fire beams from its large eyes.
+Often mistaken as a cute pet, this creature is a very dangerous beast.
+A very fast monster that rolls up and rams its enemies.
+A flaming beast that is lethal to the touch.
+Uses a wand to cast various spells against an enemy.
+Turns enemies to stone and crushes them to dust.
+Elf twins that attack an enemy from opposite sides.
+An insect monster with the jaws of a stag and the horn of a beetle.
+A monster with four highly deterous arms ffor executing separate attacks.
+A Man-shaped mantis with two razor sharp scythes.
+A chameleon-like monster that can hide anywhere by changing colors.
+Rolls along the ground releasing bolts of electricity to attack its enemies.
+Swallows enemies whole and uses thier essence as energy.
+A zombie shark that wonders the ocean depths, cursing any that dare cross its path.
+A phantom fairy that fires countless arrows at anything that harbors any urge to
+This creature blocks enemy movemnts with gale-force winds and attack with a massive battle axe.
+A rocket launching fish protected by  thorny spikes.
+This creature is powered by the life force of the fishes it captures with its long tongue.
+A highly accurate  mechanical monster covered with largecaliber cannons.
+A skeletal zombie dragon that is capable of flying across the skies.
+A massive beast of a fish with arms, legs, and razor-sharp teeth.
+This monster spins about it's enemy launching blinding leaves and painfull seeds.
+A zombie rat that hunts felines.
+A slime creature with a frog's head that croaks as it attack.
+A strange sea serpent with a massive mouth lined with huge fangs.
+a wiched elf that just loves to engage in battles.
+Creates powerful tornadoes with its huge wings.
+A fully grown Mushroom Man with an Increased attack power
+This brother of swamp battlegurad may not be powerful but is pretty good on defense.
+A crimson dragon that spits fireballs at its enemies.
+A monster that aimlessly wanders in search of enemies
+A steel idol warshipped in the land of machines.
+A not very reliable sorcerer's servant
+A strange Warrior from another dimension.
+A creature that came from another galaxy.
+A low class, minor dragon incapable of breathing fire.
+A larva with steel spikes to attack he unwary.
+A harmless creature usually found in the attic of any home.
+A very unusual skeletal zombie elephant with glowing gold bones.
+A black shark that can deteat almost any scent in the water.
+A very long snake that often appears in legends and myths.
+A thorny plant found in the darklands that wraps itself around any unwary traveler.
+Man-like dinosaur lacking in strength but with a high I,Q.
+A blood-sucking snake in human form that attacks any living thing that passes nearby.
+A Tiger-striped dragon that is often seen racing across the wasteland with tremendous speed.
+A jet-black dragon that inhabits the jungles and feeds on trees.
+Empress of the Golden Kingdom. None may refuse her will.
+A very ferocious monster spawned from a T-Rex
+This Forest-dwelling witch can see all with the eye on her forhead
+A white goat that has inhabited the forset for ages. The creature is actualy an elder of the woods.
+A rare scarlet scorpion that can be found in the tundra
+A very wise, long-nosed goblin with supernatural powers.
+A wizard with a black cape that is actually a talking lion disguised as a man.
+A rare flower that blooms in a pitch-dark abyss.
+A cutting-edge robot that eliminates intruders upon detection.
+This bird is a precurser to disaster!!
+A popular creature in mythology that delivers judgement with a sharp spear.
+This creature is known to predict the weather with ver little accutacy.
+This creature corners its enemies and seals away their power.
+A mechanically enhanced snail that is no faster that it used to be.
+A creature  transforms into the image of its enemy and copies every offensive move.
+A highly evolved Larvas that is even more powerful than before.
+A living vase that blinds enemies with pollen and attacks with it's sharp teeth.
+Attacks nearby opponents by reaching out with its blue vines.
+Wraps it's coils around opponents and pecks them with it's huge beak.
+A large jar that attacks nearby enemies by unleashing the monster it contains inside.
+A fairy of the arts and an excellent harp player.
+A monster turtle with a crimson shell. It feeds on fire.
+A red rose possessed by a vile spirit that feeds on the life force of others to provide the flower with nourishment.
+Drags enemies into a mirror world.
+A monster that can eat all it wants mut never is fulfilled.
+With skin tinged a bluish white, this strange creature is a fearsome sight to behold.
+A monster created an experimental attempt to graft wings on beasts.
+A monster capable of bringing on sudden rain showers.
+Seals away the good in a soul to create a wicked being.
+A cute fairy dedicated to bringing about eternal love
+A low-class penguin soldier that attacks in a group.
+A beautiful and powerful dragon fairy.
+An ill-mannered field mouse that chews on anything.
+A liquid life form that moves freely in water.
+An undersea creature that attacks with two whip-like tails.
+A monster with a massive maw that allows it to swallow an enemy whole.
+The peacemaker among monsters.
+A monster fly that swoops down with sharp sword-like arms extended out front.
+A lizard that discarges electricity Stored in its body.
+A servant of fiends used primarily for scoutng an area.
+Soothes the souls of others by chanting a mysterious spell.
+A two headed thunder dragon capable of powerful electric attacks.
+A hunter that uses its spider web to entrap its enemies.
+A bluish starfish with a solid hide capable of fending off attacks.
+A fairy that controls the feelings of others, instilling them with bravery.
+A sea creature with sharp teeth that won't release a victim once they're locked on.
+A lady Warrior drenched in the essence from a thousand battlefields
+A clay idol representing a rock spirit. The creature has significant attack and defense factors.
+A creature made up of several snakes that attack separately in battle.
+A vile Warrior wizard adept at casting doom-dealing spells.
+Controls air curents and can generate a sudden gust of wind to blow away an opponent.
+The appearance of this creature is preceded by the ground melting under an opponent's feet.
+An amphibian warrior that can easily navigate beneath the waters.
+A fairy dedicated to protecting fountains from pollution.
+A mermaid sentry serving the sea King and his kingdom.
+This fast creature can easily elude enemy attacks and counter them with its vicious claws.
+An inexperienced witch who just started learning the mystic dark arts.
+A rat that is protected by armor-like fur.
+a powerful, prehistoric lizard warrior.
+A lunar sorcerer that uses mystical spells to induce hallucinations.
+A rock giant consisting of massive boulders.
+A messanger of newborn life
+A green-scaled lizard warrior dedicated to protecting the sea.
+Not very useful double of a queen.
+A bird that glows with a blue flame and has a head of hair shaped like a crown.
+A protector of the forest, This massive tree continues to grow.
+Queen of the tree spirit who is embraced by brilliant autumn leaves.
+A bugroth unit modified for underwater warfare
+A gigantic caterpiller that spits acid capable of melting almost anything.
+A scheming queen who covets the king's throne during his absence.
+A black-haired sheep that is capable of sorcery
+A crature that hides in a saucer and appears only to attack enemies.
+A very swift, fire breathing viper
+Mechanical soldier with a mind of its own. Originally created to protect members of the royal family.
+Looks like any other slime, but definitely much more powerful!
+This amphibian creature boasts a high attack factor, but not much of one for defense.
+A machine designed to blitz its enemies.
+Confuses enemy monsters with noise that is harsh to the ears.
+Attacks from the skies with a whip like tail.
+A boomerang featuring the two cards : The legendary sword and The sword of darkness.
+A card for boosting the power of the labyrinth wall
+Destorys all warrior cards played on the feild
+Increases the strength of those who control the power of salamandra.
+Cancels the magic over all level-reduced monsters and sets them at level 0.
+Eliminates all zombie creatures.
+A card that increases the power of any selected monster by 2 levels.
+A card that changes any monter to a machine monster.
+A horn that increases the power of fairy creatures.
+Acid rain destroys an opponent's machine monsters.
+Opponent monsters in play with attack factor of 1500 or more are eliminated.
+An insecticide for wiping out an opponent's insect monsters that are currently in play.
+A magic wind that reduces to rubble an opponents Rock monsters that are currently in play.
+A blast of heat dries up and eliminates an opponentes's fish monsters that are currently in play.
+Sacrifices the monster with the highest defense rating and summons shield.
+Sacrifices Beast-warrior, Dragon, and Pyro monsters to summon Yamadron.
+Sacrifices Kazejin, Suijin, and Sanga of the Thunder to summon Gate Guardian.
+A glaring light that increases the power of all monsters.
+Decreases an opponent's in-play monsters by two levels.
+Ceremony conducted to summon Black Luster soldier. Sacrifice required.
+Ceremony conducted to summon Zera. Sacrifice required.
+Destroy all opponent magic cards that are in play.
+Ceremony conducted to summon WarLion. Sacrifice required.
+Ceremony conducted to summon Fiend's Mirror. scarifice required.
+Sacrifice three blue-eyes to summon Ultimate Dragon.
+Sacrifice Dancer and Warrior to summon Performance of Sword.
+A card with the Ingredients for making a delicious hamburger.
+Sacrifice Beastwarrior and Golem to summon Sengenjin.
+Sacrifice Warrior and scyth wielder to summon Skull Guardian.
+Sacrifice a horned Monster to summon Tri-horned Dragon.
+Monsters with attack factors of 500 or lower are eliminated from the playing field.
+Monsters with attack factors of 1000 or less are eliminated from the play feild.
+When an opposing monster's attack Factor is 1500 or lower, it is eliminated from the play field.
+When an opposing monster's attack factor is 2000 or lower it is eliminated from the play field.
+When an opposing monster's attack factor is 3000 or lower it is eliminated from the play field.
+When an opponent's monster attacks, it is blown to smithereens and eliminated from the play feild.
+Reflects the damage of Direct cards like Fire spark and inferno back at your opponent.
+A card that reverses the effect of recovery cards and transforms the points to damage.
+A card that reverse the effects of power-up cards and transform the effects to power reduction.
+A trap card for tricking your opponent. Nothing happens when it is attacked.
+Select a spcific Monster for sacrifice and summon Serpent Night Dragon.
+Sacrifice crab and turtle to summon Crab turtle.
+Sacrific a masked one to summon a new mask.
+Sacrifice 3 fiend monsters to conduct the ritual fo the Resurrection of Chakra.
+Sacrifice Puppeteer and Machine Monsters to summon the puppet.
+Sacrifice the Stag beetle and beetle to summon Javelin Beetle.
+Sacrifice the Ashura's Arm and Sword-wielder to summon.
+Sacrifice a normal Queen to summon Cosmo Queen.
+Sacrifice Temple and Cockroach to summon Dokurorider.
+sacrifice Horn and Machine Fish to summon Sea Fortess.
+A warrior dancer with fancy dance steps.
+Attracts hungry enemies with tasty aromas and eats them when they get close enough.
+A headstrong, primitive man equipped with a Millennium item.
+A guardian of the law that doesn't forgive cheating. Attacks enemies with its sword-like arms.
+A wicked dragon with three horns protruding from its head.
+A dragon created from the soul of a wicked Knight.
+A monk who has conducted several rituals in the netherworld, and who is capable of using both weapons and magic.
+A queen who rules over all the stars in the universe.
+A twisted shape that attacks with tentacle-like arms.
+A creature with a turtle shell and crab scissors to provide high attack and defense factors.
+A dragon warrior armed with a crescent-shaped sword. Rumored to be from the moon.
+A dragon that arrived on earth by means of a comet that fell from the far reaches of space.
+With the burning hide of a meteorte, this creature vaporizes all that it touches.
+A heavenly stallion that flies across the skies on scarlet wings.
+A mysterious doll with a strange dance that robs the power of opposing monsters.
+A skiled warrior that wields six swords, against opposing monsters.
+A creature with lethal scissors that cut through almost anything.
+A sea monster with a cannon mounted on its back to blow its enemies out of the water.
+A lovely rider that races across the wasteland, raising thick clouds of dust.
+A creature that twists the fabric of light and darkness to generate images to confuse opponents. 
+Ceremony for summoning the Magician of Black Chaos. Sacrifice required.
+The ultimate magic-user, who wields the power of chaos born from the fusion of Dark and Light. 

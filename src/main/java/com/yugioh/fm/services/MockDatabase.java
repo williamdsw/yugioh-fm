@@ -1,10 +1,8 @@
 package com.yugioh.fm.services;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -66,9 +64,8 @@ public class MockDatabase {
 		List<String> cardDefenses = getContentFromFile("files/data/card/defenses.txt");
 		List<String> cardPasswords = getContentFromFile("files/data/card/passwords.txt");
 		List<String> cardStarChipCosts = getContentFromFile("files/data/card/starchip-costs.txt");
+		List<String> cardGuardianStars = getContentFromFile("files/data/card/guardian-stars.txt");
 		
-		System.out.println("cardDescriptions.size = " + cardDescriptions.size());
-
 		// LISTS
 		List<GameCharacter> characters = new ArrayList<>();
 		List<Deck> decks = new ArrayList<>();
@@ -76,10 +73,11 @@ public class MockDatabase {
 		
 		for (int index = 0; index < NUMBER_OF_CHARACTERS; index++) {
 			GameCharacter character = new GameCharacter(null, null, null);
+			Deck deck = new Deck(character);
+			
 			character.setName(gameCharacterNames.get(index));
 			character.setImageUrl(gameCharacterImageUrls.get(index));
-			
-			Deck deck = new Deck(character);
+			character.setDeck(deck);
 			
 			characters.add(character);
 			decks.add(deck);
@@ -94,13 +92,13 @@ public class MockDatabase {
 			Integer defense = (!cardDefenses.get(index).contains("NULL") ? Integer.parseInt(cardDefenses.get(index)) : null);
 			String password = (!cardPasswords.get(index).contains("NULL") ? cardPasswords.get(index) : null);
 			Double starChipCost = (!cardStarChipCosts.get(index).contains("NULL") ? Double.parseDouble(cardStarChipCosts.get(index)) : null);
+			String guardianStars = cardGuardianStars.get(index);
 			
 			Card card = new Card();
 			card.setId(null);
 			card.setNumber(cardNumbers.get(index));
 			card.setName(cardNames.get(index));
-			//card.setDescription(cardDescriptions.get(index));
-			card.setDescription("");
+			card.setDescription(cardDescriptions.get(index));
 			card.setNumber(cardNumbers.get(index));
 			card.setCardType(cardType);
 			card.setMonsterType(monsterType);
@@ -110,27 +108,18 @@ public class MockDatabase {
 			card.setPassword(password);
 			card.setStarChipCost(starChipCost);
 			card.setImageUrl(String.format("assets/cards/%s.jpg", card.getNumber()));
-			//card.setGuardians(guardians);
 			
-			System.out.println("CARD OK?");
+			if (!guardianStars.contains("NULL")) {
+				String[] stars = guardianStars.split(",");
+				if (stars.length == 2) {
+					GuardianStar primary = GuardianStar.toEnum(stars[0]);
+					GuardianStar secondary = GuardianStar.toEnum(stars[1]);
+					card.setGuardians(setGuardianStar(primary, secondary));
+				}
+			}
 			
 			cards.add(card);
 		}
-		
-		System.out.println("ALL CARDS?");
-		
-	
-		// GAME CHARACTERS
-	
-
-		/*List<String> guardianStars = getContentFromFile("files/data/card/guardian-stars.txt");
-		guardianStars.forEach((star) -> {
-			String[] stars = star.split(",");
-			if (stars.length == 2) {
-				System.out.println(GuardianStar.toEnum(stars[0]));
-				System.out.println(GuardianStar.toEnum(stars[1]));
-			}
-		}) ;*/
 		
 		// GAME CHARACTER --> DECK
 		/*simonMuran.setDeck(deck1);
@@ -172,57 +161,6 @@ public class MockDatabase {
 		darkNite.setDeck(deck37);
 		nitemare.setDeck(deck38);
 		duelMasterK.setDeck(deck39);*/
-		
-		// LISTS
-
-		/*List<GameCharacter> characters = new ArrayList<>();
-		characters.addAll(Arrays.asList(simonMuran, teana1, jono1, villager1, villager2));
-		characters.addAll(Arrays.asList(villager3, seto1, heishin1, rexRaptor, weevilUnderwood));
-		characters.addAll(Arrays.asList(maiValentine, banditKeith, shadi, yamiBakura, maximillionPegasus));
-		characters.addAll(Arrays.asList(isis, setoKaiba, mageSoldier, jono2, teana2));
-		characters.addAll(Arrays.asList(oceanMage, highMageSecmeton, forestMage, highMageAnubisius, mountainMage));
-		characters.addAll(Arrays.asList(highMageAtenza, desertMage, highMageMartis, meadowMage, highMageKepura));
-		characters.addAll(Arrays.asList(labyrinthMage, seto2, sebek, neku, heishin2));
-		characters.addAll(Arrays.asList(seto3, darkNite, nitemare, duelMasterK));*/
-		
-		// GAME CHARACTER IMAGE URL
-		/*List<String> charactersImageUrls = getContentFromFile("files/game-characters-image-urls.txt");
-		for (int index = 0; index < characters.size(); index++) {
-			GameCharacter character = characters.get(index);
-			character.setImageUrl(charactersImageUrls.get(index));
-		}*/
-		
-		
-		/*List<Deck> decks = new ArrayList<>();
-		decks.addAll(Arrays.asList(deck1, deck2, deck3, deck4, deck5, deck6));
-		decks.addAll(Arrays.asList(deck7, deck8, deck9, deck10, deck11, deck12));
-		decks.addAll(Arrays.asList(deck13, deck14, deck15, deck16, deck17, deck18));
-		decks.addAll(Arrays.asList(deck19, deck20, deck21, deck22, deck23, deck24));
-		decks.addAll(Arrays.asList(deck25, deck26, deck27, deck28, deck29, deck30));
-		decks.addAll(Arrays.asList(deck31, deck32, deck33, deck34, deck35, deck36));
-		decks.addAll(Arrays.asList(deck37, deck38, deck39));*/
-		
-		/*List<Card> cards = new ArrayList<>();
-		cards.addAll(Arrays.asList(c001, c002, c003, c004, c005, c006, c007, c008, c009, c010));
-		cards.addAll(Arrays.asList(c011, c012, c013, c014, c015, c016, c017, c018, c019, c020));*/
-		
-		
-		/*List<String> cardDescriptions = getContentFromFile("files/data/card/descriptions.txt");
-		
-		// CARD IMAGE URL - CARD DESCRIPTION - CARD GUARDIAN STARS
-		for (int index = 0; index < cards.size(); index++) {
-			Card card = cards.get(index);
-			card.setImageUrl(String.format("assets/cards/%s.jpg", card.getNumber()));
-			card.setDescription(cardDescriptions.get(index));
-			
-			String guardians = guardianStars.get(index);
-			String[] stars = guardians.split(",");
-			if (stars.length == 2) {
-				GuardianStar primary = GuardianStar.toEnum(stars[0]);
-				GuardianStar secondary = GuardianStar.toEnum(stars[1]);
-				card.setGuardians(setGuardianStar(primary, secondary));
-			}
-		}*/
 
 		gameCharacterRepository.saveAll(characters);
 		deckRepository.saveAll(decks);
