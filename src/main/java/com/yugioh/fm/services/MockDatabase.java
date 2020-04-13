@@ -37,6 +37,12 @@ public class MockDatabase {
 	private final Integer NUMBER_OF_CHARACTERS = 39;
 	private final Integer NUMBER_OF_CARDS = 722;
 	
+	// LISTS
+	private List<GameCharacter> characters = new ArrayList<>();
+	private List<Deck> decks = new ArrayList<>();
+	private List<Card> cards = new ArrayList<>();
+	private List<DeckCard> deckCards = new ArrayList<>();
+	
 	// CONSTRUCTOR
 	
 	@Autowired
@@ -65,12 +71,9 @@ public class MockDatabase {
 		List<String> cardPasswords = getContentFromFile("files/data/card/passwords.txt");
 		List<String> cardStarChipCosts = getContentFromFile("files/data/card/starchip-costs.txt");
 		List<String> cardGuardianStars = getContentFromFile("files/data/card/guardian-stars.txt");
+		List<String> deckCardNumbers = getContentFromFile("files/data/deck-card/numbers.txt");
 		
-		// LISTS
-		List<GameCharacter> characters = new ArrayList<>();
-		List<Deck> decks = new ArrayList<>();
-		List<Card> cards = new ArrayList<>();
-		
+		// GAME CHARACTER --> DECK
 		for (int index = 0; index < NUMBER_OF_CHARACTERS; index++) {
 			GameCharacter character = new GameCharacter(null, null, null);
 			Deck deck = new Deck(character);
@@ -83,6 +86,7 @@ public class MockDatabase {
 			decks.add(deck);
 		}
 		
+		// CARD
 		for (int index = 0; index < NUMBER_OF_CARDS; index++) {
 
 			CardType cardType = CardType.toEnum(cardTypes.get(index));
@@ -120,73 +124,28 @@ public class MockDatabase {
 			
 			cards.add(card);
 		}
-		
-		// GAME CHARACTER --> DECK
-		/*simonMuran.setDeck(deck1);
-		teana1.setDeck(deck2);
-		jono1.setDeck(deck3);
-		villager1.setDeck(deck4);
-		villager2.setDeck(deck5);
-		villager3.setDeck(deck6);
-		seto1.setDeck(deck7);
-		heishin1.setDeck(deck8);
-		rexRaptor.setDeck(deck9);
-		weevilUnderwood.setDeck(deck10);
-		maiValentine.setDeck(deck11);
-		banditKeith.setDeck(deck12);
-		shadi.setDeck(deck13);
-		yamiBakura.setDeck(deck14);
-		maximillionPegasus.setDeck(deck15);
-		isis.setDeck(deck16);
-		setoKaiba.setDeck(deck17);
-		mageSoldier.setDeck(deck18);
-		jono2.setDeck(deck19);
-		teana2.setDeck(deck20);
-		oceanMage.setDeck(deck21);
-		highMageSecmeton.setDeck(deck22);
-		forestMage.setDeck(deck23);
-		highMageAnubisius.setDeck(deck24);
-		mountainMage.setDeck(deck25);
-		highMageAtenza.setDeck(deck26);
-		desertMage.setDeck(deck27);
-		highMageMartis.setDeck(deck28);
-		meadowMage.setDeck(deck29);
-		highMageKepura.setDeck(deck30);
-		labyrinthMage.setDeck(deck31);
-		seto2.setDeck(deck32);
-		sebek.setDeck(deck33);
-		neku.setDeck(deck34);
-		heishin2.setDeck(deck35);
-		seto3.setDeck(deck36);
-		darkNite.setDeck(deck37);
-		nitemare.setDeck(deck38);
-		duelMasterK.setDeck(deck39);*/
 
 		gameCharacterRepository.saveAll(characters);
 		deckRepository.saveAll(decks);
 		cardRepository.saveAll(cards);
 		
-		// DECK - CARD
-		/*Card[] cards1 = { c001 };
-		Card[] cards2 = { c001 };
-		
-		List<DeckCard> deckCards1 = fillDeckCards(deck1, cards1);
-		List<DeckCard> deckCards2 = fillDeckCards(deck2, cards2);
-		
-		// DECK --> DECK CARDS
-		deck1.setDeckCards(deckCards1);
-		deck2.setDeckCards(deckCards2);
-		
-		List<DeckCard> deckCards = new ArrayList<DeckCard>();
-		deckCards.addAll(deckCards1);
-		deckCards.addAll(deckCards2);
-		deckCardRepository.saveAll(deckCards);*/
+		// DECK CARDS : TODO
+		for (int index = 0; index < deckCardNumbers.size(); index++) {
+			Deck deck = decks.get(index);
+			String[] currentDeckCardNumbers = deckCardNumbers.get(index).split(",");
+			List<DeckCard> currentDeckCards = fillDeckCards(deck, currentDeckCardNumbers);
+			deck.setDeckCards(currentDeckCards);
+			this.deckCards.addAll(currentDeckCards);
+		}
+
+		deckCardRepository.saveAll(deckCards);
 	}
 	
-	private List<DeckCard> fillDeckCards(Deck deck, Card[] cards) {
+	private List<DeckCard> fillDeckCards(Deck deck, String[] cardNumbers) {
 		List<DeckCard> deckCards = new ArrayList<>();
 		
-		for (Card card : cards) {
+		for (String code : cardNumbers) {
+			Card card = cards.stream().filter(c -> c.getNumber().equals(code)).collect(Collectors.toList()).get(0);
 			DeckCard deckCard = new DeckCard(deck, card);
 			deckCards.add(deckCard);
 		}

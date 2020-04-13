@@ -53,12 +53,15 @@ public class Card extends AbstractEntity {
 
 	// CONSTRUCTOR
 
-	public Card() {
-	}
-
+	public Card() {}
 	public Card(Integer id) {
 		super();
 		this.id = id;
+	}
+	
+	public Card(String number) {
+		super();
+		this.number = number;
 	}
 
 	public Card(String number, String name, String description, CardType cardType, MonsterType monsterType, 
