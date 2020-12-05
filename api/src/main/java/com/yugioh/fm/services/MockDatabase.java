@@ -1,7 +1,11 @@
 package com.yugioh.fm.services;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -12,6 +16,7 @@ import java.util.stream.Stream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yugioh.fm.domain.Card;
 import com.yugioh.fm.domain.Deck;
 import com.yugioh.fm.domain.DeckCard;
@@ -27,11 +32,16 @@ import com.yugioh.fm.repositories.GameCharacterRepository;
 @Service
 public class MockDatabase {
 	
-	// FIELDS
-	
+	@Autowired
 	private GameCharacterRepository gameCharacterRepository;
+	
+	@Autowired
 	private DeckRepository deckRepository;
+	
+	@Autowired
 	private CardRepository cardRepository;
+	
+	@Autowired
 	private DeckCardRepository deckCardRepository;
 	
 	private final Integer NUMBER_OF_CHARACTERS = 39;
@@ -42,16 +52,6 @@ public class MockDatabase {
 	private List<Deck> decks = new ArrayList<>();
 	private List<Card> cards = new ArrayList<>();
 	private List<DeckCard> deckCards = new ArrayList<>();
-	
-	// CONSTRUCTOR
-	
-	@Autowired
-	public MockDatabase(GameCharacterRepository gameCharacterRepository, DeckRepository deckRepository, CardRepository cardRepository, DeckCardRepository deckCardRepository) {
-		this.gameCharacterRepository = gameCharacterRepository;
-		this.deckRepository = deckRepository;
-		this.cardRepository = cardRepository;
-		this.deckCardRepository = deckCardRepository;
-	}
 	
 	// HELPER FUNCTIONS
 	
@@ -124,10 +124,23 @@ public class MockDatabase {
 			
 			cards.add(card);
 		}
+		
+		/*String json = new ObjectMapper().writeValueAsString(cards);
+		System.out.println("json: " + json);
+		
+		try (FileWriter writer = new FileWriter("teste.json")) {
+			writer.append(json);
+		}*/
+		
 
-		gameCharacterRepository.saveAll(characters);
+		gameCharacterRepository.saveAll(characters);		
 		deckRepository.saveAll(decks);
 		cardRepository.saveAll(cards);
+		
+		/*String json = new ObjectMapper().writeValueAsString(cards);		
+		try (FileWriter writer = new FileWriter("teste.json")) {
+			writer.append(json);
+		}*/
 		
 		// DECK CARDS : TODO
 		for (int index = 0; index < deckCardNumbers.size(); index++) {

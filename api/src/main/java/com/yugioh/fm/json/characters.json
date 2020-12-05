@@ -1,0 +1,197 @@
+[
+    {
+        "id": 1,
+        "name": "Simon Muran",
+        "imageUrl": "assets/characters/simon-muran.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Teana",
+        "imageUrl": "assets/characters/teana-1.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Jono",
+        "imageUrl": "assets/characters/jono-1.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Villager 1",
+        "imageUrl": "assets/characters/villager-1.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Villager 2",
+        "imageUrl": "assets/characters/villager-2.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Villager 3",
+        "imageUrl": "assets/characters/villager-3.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Seto 1",
+        "imageUrl": "assets/characters/seto-1.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Heishin",
+        "imageUrl": "assets/characters/heishin-1.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Rex Raptor",
+        "imageUrl": "assets/characters/rex-raptor.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Weevil Underwood",
+        "imageUrl": "assets/characters/weevil-underwood.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Mai Valentine",
+        "imageUrl": "assets/characters/mai-valentine.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Bandit Keith",
+        "imageUrl": "assets/characters/bandit-keith.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Shadi",
+        "imageUrl": "assets/characters/shadi.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Yami Bakura",
+        "imageUrl": "assets/characters/yami-bakura.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Maximillion Pegasus",
+        "imageUrl": "assets/characters/maximillion-pegasus.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Isis",
+        "imageUrl": "assets/characters/isis.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Seto Kaiba",
+        "imageUrl": "assets/characters/seto-kaiba.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Mage Soldier",
+        "imageUrl": "assets/characters/mage-soldier.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Jono 2",
+        "imageUrl": "assets/characters/jono-2.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Teana 2",
+        "imageUrl": "assets/characters/teane-2.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Ocean Mage",
+        "imageUrl": "assets/characters/ocean-mage.jpg"
+    },
+    {
+        "id": 22,
+        "name": "High Mage Secmeton",
+        "imageUrl": "assets/characters/high-mage-secmeton.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Forest Mage",
+        "imageUrl": "assets/characters/forest-mage.jpg"
+    },
+    {
+        "id": 24,
+        "name": "High Mage Anubisius",
+        "imageUrl": "assets/characters/high-mage-anubisius.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Mountain Mage",
+        "imageUrl": "assets/characters/mountain-mage.jpg"
+    },
+    {
+        "id": 26,
+        "name": "High Mage Atenza",
+        "imageUrl": "assets/characters/high-mage-atenza.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Desert Mage",
+        "imageUrl": "assets/characters/desert-mage.jpg"
+    },
+    {
+        "id": 28,
+        "name": "High Mage Martis",
+        "imageUrl": "assets/characters/high-mage-martis.jpg"
+    },
+    {
+        "id": 29,
+        "name": "Meadow Mage",
+        "imageUrl": "assets/characters/meadow-mage.jpg"
+    },
+    {
+        "id": 30,
+        "name": "High Mage Kepura",
+        "imageUrl": "assets/characters/high-mage-kepura.jpg"
+    },
+    {
+        "id": 31,
+        "name": "Labyrinth Mage",
+        "imageUrl": "assets/characters/labyrinth-mage.jpg"
+    },
+    {
+        "id": 32,
+        "name": "Seto 2",
+        "imageUrl": "assets/characters/seto-2.jpg"
+    },
+    {
+        "id": 33,
+        "name": "Sebek",
+        "imageUrl": "assets/characters/sebek.jpg"
+    },
+    {
+        "id": 34,
+        "name": "Neku",
+        "imageUrl": "assets/characters/neku.jpg"
+    },
+    {
+        "id": 35,
+        "name": "Heishin 2",
+        "imageUrl": "assets/characters/heishin-2.jpg"
+    },
+    {
+        "id": 36,
+        "name": "Seto 3",
+        "imageUrl": "assets/characters/seto-3.jpg"
+    },
+    {
+        "id": 37,
+        "name": "Dark Nite",
+        "imageUrl": "assets/characters/dark-nite.jpg"
+    },
+    {
+        "id": 38,
+        "name": "Nitemare",
+        "imageUrl": "assets/characters/nite-mare.jpg"
+    },
+    {
+        "id": 39,
+        "name": "Duel Master K",
+        "imageUrl": "assets/characters/duel-master-k.jpg"
+    }
+]
