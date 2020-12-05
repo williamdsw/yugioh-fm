@@ -19,8 +19,6 @@ import com.yugioh.fm.domain.enums.MonsterType;
 @Entity
 public class Card extends AbstractEntity {
 
-	// FIELDS
-
 	private static final long serialVersionUID = 1L;
 	private String number;
 	private String name;
@@ -51,21 +49,21 @@ public class Card extends AbstractEntity {
 
 	private String imageUrl;
 
-	// CONSTRUCTOR
+	public Card() {
+	}
 
-	public Card() {}
 	public Card(Integer id) {
 		super();
 		this.id = id;
 	}
-	
+
 	public Card(String number) {
 		super();
 		this.number = number;
 	}
 
-	public Card(String number, String name, String description, CardType cardType, MonsterType monsterType, 
-				Integer level, Integer atk, Integer def, String password, Double starChipCost) {
+	public Card(String number, String name, String description, CardType cardType, MonsterType monsterType,
+			Integer level, Integer atk, Integer def, String password, Double starChipCost) {
 		super();
 		this.number = number;
 		this.name = name;
@@ -78,8 +76,6 @@ public class Card extends AbstractEntity {
 		this.password = password;
 		this.starChipCost = starChipCost;
 	}
-
-	// GETTERS / SETTERS
 
 	public String getNumber() {
 		return number;
@@ -106,7 +102,7 @@ public class Card extends AbstractEntity {
 	}
 
 	public CardType getCardType() {
-		return (this.cardType != null ? CardType.toEnum(cardType): null);
+		return (this.cardType != null ? CardType.toEnum(cardType) : null);
 	}
 
 	public void setCardType(CardType cardType) {
@@ -114,7 +110,7 @@ public class Card extends AbstractEntity {
 	}
 
 	public MonsterType getMonsterType() {
-		return (this.monsterType != null ? MonsterType.toEnum(monsterType): null);
+		return (this.monsterType != null ? MonsterType.toEnum(monsterType) : null);
 	}
 
 	public void setMonsterType(MonsterType monsterType) {
@@ -160,11 +156,11 @@ public class Card extends AbstractEntity {
 	public void setStarChipCost(Double starChipCost) {
 		this.starChipCost = starChipCost;
 	}
-	
+
 	public List<DeckCard> getDeckCards() {
 		return deckCards;
 	}
-	
+
 	public void setDeckCards(List<DeckCard> deckCards) {
 		this.deckCards = deckCards;
 	}
@@ -180,7 +176,7 @@ public class Card extends AbstractEntity {
 	}
 
 	public List<Card> getRequiredCardsToFusion() {
-		return requiredCardsToFusion.stream().map(id -> new Card (id)).collect(Collectors.toList());
+		return requiredCardsToFusion.stream().map(id -> new Card(id)).collect(Collectors.toList());
 	}
 
 	public void addRequiredCardToFusion(Card card) {

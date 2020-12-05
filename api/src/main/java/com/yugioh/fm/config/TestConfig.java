@@ -10,19 +10,9 @@ import com.yugioh.fm.services.MockDatabase;
 @Configuration
 @Profile("test")
 public class TestConfig {
-
-	// FIELDS
-
-	private MockDatabase mockDatabase;
-
-	// CONSTRUCTOR
-
+	
 	@Autowired
-	public TestConfig(MockDatabase mockDatabase) {
-		this.mockDatabase = mockDatabase;
-	}
-
-	// BEANS
+	private MockDatabase mockDatabase;
 
 	@Bean
 	public boolean createDatabase() throws Exception {

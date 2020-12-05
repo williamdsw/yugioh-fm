@@ -2,40 +2,34 @@ package com.yugioh.fm.domain.enums;
 
 public enum MonsterType {
 
-	// VALUES
-
-	AQUA(1, "Aqua"),
-	BEAST(2, "Beast"),
-	BEAST_WARRIOR(3, "Beast-Warrior"),
-	DINOSAUR(4, "Dinosaur"),
+	AQUA(1, "Aqua"), 
+	BEAST(2, "Beast"), 
+	BEAST_WARRIOR(3, "Beast-Warrior"), 
+	DINOSAUR(4, "Dinosaur"), 
 	DRAGON(5, "Dragon"),
-	FAIRY(6, "Fairy"),
-	FIEND(7, "Fiend"),
-	FISH(8, "Fish"),
-	INSECT(10, "Insect"),
+	FAIRY(6, "Fairy"), 
+	FIEND(7, "Fiend"), 
+	FISH(8, "Fish"), 
+	INSECT(10, "Insect"), 
 	MACHINE(11, "Machine"),
-	PLANT(12, "Plant"),
-	PYRO(13, "Pyro"),
-	REPTILE(14, "Reptile"),
-	ROCK(15, "Rock"),
+	PLANT(12, "Plant"), 
+	PYRO(13, "Pyro"), 
+	REPTILE(14, "Reptile"), 
+	ROCK(15, "Rock"), 
 	SEA_SERPENT(16, "Sea Serpent"),
-	SPELLCASTER(17, "Spellcaster"),
-	THUNDER(18, "Thunder"),
-	WARRIOR(19, "Warrior"),
+	SPELLCASTER(17, "Spellcaster"), 
+	THUNDER(18, "Thunder"), 
+	WARRIOR(19, "Warrior"), 
 	WINGED_BEAST(20, "Winged Beast"),
 	ZOMBIE(21, "Zombie");
-
-	// FIELDS
 
 	private Integer code;
 	private String description;
 
-	// CONSTRUCTOR
-
 	private MonsterType(Integer code, String description) {
-			this.code = code;
-			this.description = description;
-		}
+		this.code = code;
+		this.description = description;
+	}
 
 	// GETTERS
 

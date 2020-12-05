@@ -10,24 +10,19 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 public class AbstractEntity implements Serializable {
 
-	// FIELDS
-
 	private static final long serialVersionUID = 1L;
 
-	@Id @GeneratedValue (strategy = GenerationType.IDENTITY)
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	protected Integer id;
-	
-	// GETTERS / SETTERS
-	
+
 	public Integer getId() {
 		return id;
 	}
-	
+
 	public void setId(Integer id) {
 		this.id = id;
 	}
-
-	// OVERRIDED FUNCTIONS
 
 	@Override
 	public int hashCode() {
@@ -39,12 +34,16 @@ public class AbstractEntity implements Serializable {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj) return true;
-		if (obj == null) return false;
-		if (getClass() != obj.getClass()) return false;
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
 		AbstractEntity other = (AbstractEntity) obj;
 		if (id == null) {
-			if (other.id != null) return false;
+			if (other.id != null)
+				return false;
 		} else if (!id.equals(other.id))
 			return false;
 		return true;

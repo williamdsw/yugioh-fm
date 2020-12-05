@@ -11,8 +11,6 @@ import com.yugioh.fm.domain.Card;
 @Repository
 public interface CardRepository extends JpaRepository<Card, Integer> {
 
-	// HELPER FUNCTIONS
-
 	@Transactional(readOnly = true)
 	public List<Card> findByNameOrNumberContainingIgnoreCase(String name, String number);
 }

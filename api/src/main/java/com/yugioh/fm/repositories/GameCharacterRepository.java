@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.yugioh.fm.domain.GameCharacter;
 
 @Repository
-public interface GameCharacterRepository extends JpaRepository<GameCharacter, Integer>{
+public interface GameCharacterRepository extends JpaRepository<GameCharacter, Integer> {
 
 }

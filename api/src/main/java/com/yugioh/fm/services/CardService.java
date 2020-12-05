@@ -12,31 +12,24 @@ import com.yugioh.fm.repositories.CardRepository;
 @Service
 public class CardService {
 
-	// FIELDS
-
+	@Autowired
 	private CardRepository repository;
 
-	// CONSTRUCTOR
-
-	@Autowired
-	public CardService(CardRepository cardRepository) {
-		this.repository = cardRepository;
-	}
-
-	// HELPER FUNCTIONS
-
+	@Transactional(readOnly = true)
 	public List<Card> findAllCards() {
 		return repository.findAll();
 	}
 
+	@Transactional(readOnly = true)
 	public List<Card> findAllByNameOrNumber(String name, String number) {
 		return repository.findByNameOrNumberContainingIgnoreCase(name, number);
 	}
 
+	@Transactional(readOnly = true)
 	public List<Card> findAllByDeck() {
-		return null;
+		return null; // TODO!
 	}
-	
+
 	@Transactional
 	public Card insert(Card card) {
 		card.setId(null);

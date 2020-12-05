@@ -13,23 +13,15 @@ import com.yugioh.fm.repositories.GameCharacterRepository;
 @Service
 public class GameCharacterService {
 
-	// FIELDS
-
+	@Autowired
 	private GameCharacterRepository repository;
 
-	// CONSTRUCTOR
-
-	@Autowired
-	public GameCharacterService(GameCharacterRepository repository) {
-		this.repository = repository;
-	};
-
-	// HELPER FUNCTIONS
-
+	@Transactional(readOnly = true)
 	public List<GameCharacter> findAll() {
 		return repository.findAll();
 	}
 
+	@Transactional(readOnly = true)
 	public GameCharacter findById(Integer id) {
 		Optional<GameCharacter> character = repository.findById(id);
 		return character.orElseThrow(null);
@@ -39,7 +31,6 @@ public class GameCharacterService {
 	public GameCharacter insert(GameCharacter character) {
 		character.setId(null);
 		character = repository.save(character);
-
 		return character;
 	}
 }

@@ -7,19 +7,17 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Embeddable
-public class DeckCardPK implements Serializable  {
+public class DeckCardPK implements Serializable {
 
-	// FIELDS
-	
 	private static final long serialVersionUID = 1L;
-	
-	@ManyToOne @JoinColumn (name = "deck_id")
+
+	@ManyToOne
+	@JoinColumn(name = "deck_id")
 	private Deck deck;
-	
-	@ManyToOne @JoinColumn (name = "card_id")
+
+	@ManyToOne
+	@JoinColumn(name = "card_id")
 	private Card card;
-	
-	// GETTERS / SETTERS
 
 	public Deck getDeck() {
 		return deck;
@@ -36,8 +34,6 @@ public class DeckCardPK implements Serializable  {
 	public void setCard(Card card) {
 		this.card = card;
 	}
-
-	// OVERRIDED FUNCTIONS
 
 	@Override
 	public int hashCode() {

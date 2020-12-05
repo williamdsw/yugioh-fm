@@ -19,30 +19,27 @@ import com.yugioh.fm.domain.enums.MonsterType;
 
 @Entity
 public class Deck extends AbstractEntity {
-	
-	// FIELDS
 
 	private static final long serialVersionUID = 1L;
-	
-	@JsonIgnore @OneToOne @JoinColumn (name = "character_id")
+
+	@JsonIgnore
+	@OneToOne
+	@JoinColumn(name = "character_id")
 	private GameCharacter character;
-	
-	@OneToMany (mappedBy = "id.deck")
+
+	@OneToMany(mappedBy = "id.deck")
 	private List<DeckCard> deckCards = new ArrayList<>();
-	
-	@ElementCollection (fetch = FetchType.EAGER)
-	@CollectionTable (name = "monster_type")
+
+	@ElementCollection(fetch = FetchType.EAGER)
+	@CollectionTable(name = "monster_type")
 	private Set<Integer> monsterTypes = new HashSet<>();
-	
-	// CONSTRUCTOR
 
 	public Deck() {}
+
 	public Deck(GameCharacter character) {
 		this.character = character;
 	}
 
-	// GETTERS / SETTERS
-	
 	public GameCharacter getCharacter() {
 		return character;
 	}
@@ -50,22 +47,22 @@ public class Deck extends AbstractEntity {
 	public void setCharacter(GameCharacter character) {
 		this.character = character;
 	}
-	
+
 	public List<DeckCard> getDeckCards() {
 		return deckCards;
 	}
-	
+
 	public void setDeckCards(List<DeckCard> deckCards) {
 		this.deckCards = deckCards;
 	}
-	
+
 	public Set<MonsterType> getMonsterTypes() {
 		return monsterTypes.stream().map(code -> MonsterType.toEnum(code)).collect(Collectors.toSet());
 	}
-	
+
 	public void addMonsterType(MonsterType monsterType) {
 		if (monsterType != null) {
-			this.monsterTypes.add (monsterType.getCode());
+			this.monsterTypes.add(monsterType.getCode());
 		}
 	}
 }

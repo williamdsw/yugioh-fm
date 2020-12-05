@@ -11,19 +11,10 @@ import com.yugioh.fm.repositories.DeckRepository;
 @Service
 public class DeckService {
 
-	// FIELDS
-
+	@Autowired
 	private DeckRepository repository;
 
-	// CONSTRUCTOR
-
-	@Autowired
-	public DeckService(DeckRepository repository) {
-		this.repository = repository;
-	};
-
-	// HELPER FUNCTIONS
-	
+	@Transactional(readOnly = true)
 	public Deck findByCharacter(GameCharacter character) {
 		return repository.findByCharacter(character);
 	}

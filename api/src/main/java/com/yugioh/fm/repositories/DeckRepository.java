@@ -10,8 +10,6 @@ import com.yugioh.fm.domain.GameCharacter;
 @Repository
 public interface DeckRepository extends JpaRepository<Deck, Integer> {
 
-	// HELPER FUNCTIONS
-
 	@Transactional(readOnly = true)
 	public Deck findByCharacter(GameCharacter character);
 }

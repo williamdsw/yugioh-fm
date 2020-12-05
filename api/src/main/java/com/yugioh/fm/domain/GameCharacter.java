@@ -9,8 +9,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 public class GameCharacter extends AbstractEntity {
 
-	// FIELDS
-
 	private static final long serialVersionUID = 1L;
 	private String name;
 
@@ -19,8 +17,6 @@ public class GameCharacter extends AbstractEntity {
 	private Deck deck;
 
 	private String imageUrl;
-
-	// CONSTRUCTOR
 
 	public GameCharacter() {
 	}
@@ -31,8 +27,6 @@ public class GameCharacter extends AbstractEntity {
 		this.name = name;
 		this.deck = deck;
 	}
-
-	// GETTERS / SETTERS
 
 	public String getName() {
 		return name;
