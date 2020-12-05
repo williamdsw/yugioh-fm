@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.yugioh.fm</groupId>
-	<artifactId>YugiohForbiddenMemoriesBackendAPI</artifactId>
+	<artifactId>YugiohFM</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>YugiohForbiddenMemoriesBackendAPI</name>
 	<description>Backend project for Yugioh Forbidden Memories API data.</description>

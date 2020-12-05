@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class YugiohForbiddenMemoriesBackendApiApplication {
+public class YugiohFMApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(YugiohForbiddenMemoriesBackendApiApplication.class, args);
+		SpringApplication.run(YugiohFMApplication.class, args);
 	}
 
 }
