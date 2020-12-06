@@ -1,4 +1,4 @@
-package com.yugioh.fm.domain;
+package com.yugioh.fm.model;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -12,9 +12,9 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 
-import com.yugioh.fm.domain.enums.CardType;
-import com.yugioh.fm.domain.enums.GuardianStar;
-import com.yugioh.fm.domain.enums.MonsterType;
+import com.yugioh.fm.model.enums.CardType;
+import com.yugioh.fm.model.enums.GuardianStar;
+import com.yugioh.fm.model.enums.MonsterType;
 
 @Entity
 public class Card extends AbstractEntity {

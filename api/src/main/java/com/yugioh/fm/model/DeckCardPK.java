@@ -1,4 +1,4 @@
-package com.yugioh.fm.domain;
+package com.yugioh.fm.model;
 
 import java.io.Serializable;
 

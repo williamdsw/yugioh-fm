@@ -1,4 +1,4 @@
-package com.yugioh.fm.domain.enums;
+package com.yugioh.fm.model.enums;
 
 public enum GuardianStar {
 
