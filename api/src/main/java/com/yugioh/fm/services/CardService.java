@@ -21,19 +21,8 @@ public class CardService {
 	}
 
 	@Transactional(readOnly = true)
-	public List<Card> findAllByNameOrNumber(String name, String number) {
-		return repository.findByNameOrNumberContainingIgnoreCase(name, number);
+	public List<Card> findByName(String name) {
+		return repository.findByNameContainingIgnoreCase(name);
 	}
 
-	@Transactional(readOnly = true)
-	public List<Card> findAllByDeck() {
-		return null; // TODO!
-	}
-
-	@Transactional
-	public Card insert(Card card) {
-		card.setId(null);
-		card = repository.save(card);
-		return card;
-	}
 }

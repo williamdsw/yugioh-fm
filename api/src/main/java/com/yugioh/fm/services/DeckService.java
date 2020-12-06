@@ -13,16 +13,13 @@ public class DeckService {
 
 	@Autowired
 	private DeckRepository repository;
+	
+	@Autowired
+	private GameCharacterService gameCharacterService;
 
 	@Transactional(readOnly = true)
-	public Deck findByCharacter(GameCharacter character) {
+	public Deck findByCharacter(Integer characterId) {
+		GameCharacter character = gameCharacterService.findById(characterId);
 		return repository.findByCharacter(character);
-	}
-
-	@Transactional
-	public Deck insert(Deck deck) {
-		deck.setId(null);
-		deck = repository.save(deck);
-		return deck;
 	}
 }

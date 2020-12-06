@@ -43,10 +43,6 @@ public class Card extends AbstractEntity {
 	@CollectionTable(name = "guardian_star")
 	private Set<Integer> guardians = new HashSet<>();
 
-	@ElementCollection(fetch = FetchType.EAGER)
-	@CollectionTable(name = "required_card_fusion")
-	private List<Integer> requiredCardsToFusion = new ArrayList<>();
-
 	private String imageUrl;
 
 	public Card() {
@@ -172,16 +168,6 @@ public class Card extends AbstractEntity {
 	public void setGuardians(Set<GuardianStar> guardians) {
 		if (guardians != null & guardians.size() == 2) {
 			this.guardians = guardians.stream().map(guardian -> guardian.getCode()).collect(Collectors.toSet());
-		}
-	}
-
-	public List<Card> getRequiredCardsToFusion() {
-		return requiredCardsToFusion.stream().map(id -> new Card(id)).collect(Collectors.toList());
-	}
-
-	public void addRequiredCardToFusion(Card card) {
-		if (card != null) {
-			this.requiredCardsToFusion.add(card.getId());
 		}
 	}
 

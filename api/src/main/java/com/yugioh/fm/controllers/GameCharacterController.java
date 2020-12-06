@@ -17,24 +17,22 @@ import com.yugioh.fm.services.GameCharacterService;
 @RestController
 @RequestMapping("/api/characters")
 public class GameCharacterController {
-	
+
 	@Autowired
 	private GameCharacterService service;
-	
+
 	@GetMapping
 	public ResponseEntity<List<GameCharacterDTO>> findAll() {
 		List<GameCharacter> characters = service.findAll();
 		List<GameCharacterDTO> dtos = characters.stream().map(character -> new GameCharacterDTO(character)).collect(Collectors.toList());
 		return ResponseEntity.ok().body(dtos);
 	}
-	
+
 	@GetMapping("/{id}")
 	public ResponseEntity<GameCharacterDTO> findById(@PathVariable Integer id) {
 		GameCharacter character = service.findById(id);
 		GameCharacterDTO dto = new GameCharacterDTO(character);
 		return ResponseEntity.ok().body(dto);
 	}
-	
-	
 
 }
