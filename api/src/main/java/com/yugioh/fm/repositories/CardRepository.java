@@ -12,5 +12,5 @@ import com.yugioh.fm.models.Card;
 public interface CardRepository extends JpaRepository<Card, Integer> {
 
 	@Transactional(readOnly = true)
-	public List<Card> findByNameOrNumberContainingIgnoreCase(String name, String number);
+	public List<Card> findByNameContainingIgnoreCase(String name);
 }
