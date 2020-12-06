@@ -2,7 +2,7 @@ package com.yugioh.fm.dto;
 
 import java.io.Serializable;
 
-import com.yugioh.fm.model.GameCharacter;
+import com.yugioh.fm.models.GameCharacter;
 
 public class GameCharacterDTO implements Serializable {
 

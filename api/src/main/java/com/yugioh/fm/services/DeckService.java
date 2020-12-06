@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.yugioh.fm.model.Deck;
-import com.yugioh.fm.model.GameCharacter;
+import com.yugioh.fm.models.Deck;
+import com.yugioh.fm.models.GameCharacter;
 import com.yugioh.fm.repositories.DeckRepository;
 
 @Service

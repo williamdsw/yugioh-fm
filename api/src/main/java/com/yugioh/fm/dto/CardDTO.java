@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import com.yugioh.fm.model.Card;
+import com.yugioh.fm.models.Card;
 
 public class CardDTO implements Serializable {
 

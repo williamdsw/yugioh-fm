@@ -1,4 +1,4 @@
-package com.yugioh.fm.model;
+package com.yugioh.fm.models;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -15,7 +15,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.yugioh.fm.model.enums.MonsterType;
+import com.yugioh.fm.models.enums.MonsterType;
 
 @Entity
 public class Deck extends AbstractEntity {

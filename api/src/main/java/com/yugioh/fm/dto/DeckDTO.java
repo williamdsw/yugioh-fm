@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import com.yugioh.fm.model.Deck;
+import com.yugioh.fm.models.Deck;
 
 public class DeckDTO implements Serializable {
 

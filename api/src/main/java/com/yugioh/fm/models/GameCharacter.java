@@ -1,4 +1,4 @@
-package com.yugioh.fm.model;
+package com.yugioh.fm.models;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
