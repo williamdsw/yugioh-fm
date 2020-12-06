@@ -17,13 +17,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.yugioh.fm.domain.Card;
-import com.yugioh.fm.domain.Deck;
-import com.yugioh.fm.domain.DeckCard;
-import com.yugioh.fm.domain.GameCharacter;
-import com.yugioh.fm.domain.enums.CardType;
-import com.yugioh.fm.domain.enums.GuardianStar;
-import com.yugioh.fm.domain.enums.MonsterType;
+import com.yugioh.fm.model.Card;
+import com.yugioh.fm.model.Deck;
+import com.yugioh.fm.model.DeckCard;
+import com.yugioh.fm.model.GameCharacter;
+import com.yugioh.fm.model.enums.CardType;
+import com.yugioh.fm.model.enums.GuardianStar;
+import com.yugioh.fm.model.enums.MonsterType;
 import com.yugioh.fm.repositories.CardRepository;
 import com.yugioh.fm.repositories.DeckCardRepository;
 import com.yugioh.fm.repositories.DeckRepository;
@@ -125,23 +125,10 @@ public class MockDatabase {
 			cards.add(card);
 		}
 		
-		/*String json = new ObjectMapper().writeValueAsString(cards);
-		System.out.println("json: " + json);
-		
-		try (FileWriter writer = new FileWriter("teste.json")) {
-			writer.append(json);
-		}*/
-		
-
 		gameCharacterRepository.saveAll(characters);		
 		deckRepository.saveAll(decks);
 		cardRepository.saveAll(cards);
-		
-		/*String json = new ObjectMapper().writeValueAsString(cards);		
-		try (FileWriter writer = new FileWriter("teste.json")) {
-			writer.append(json);
-		}*/
-		
+
 		// DECK CARDS : TODO
 		for (int index = 0; index < deckCardNumbers.size(); index++) {
 			Deck deck = decks.get(index);
