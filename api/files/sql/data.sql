@@ -23,11 +23,58 @@ SET time_zone = "+00:00";
 CREATE DATABASE IF NOT EXISTS `yugioh-fm` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `yugioh-fm`;
 
+
+--
+-- Dumping data for table `game_character`
+--
+
+INSERT INTO `game_characters` (`id`, `image_url`, `name`) VALUES
+(1, 'assets/characters/simon-muran.jpg', 'Simon Muran'),
+(2, 'assets/characters/teana-1.jpg', 'Teana'),
+(3, 'assets/characters/jono-1.jpg', 'Jono'),
+(4, 'assets/characters/villager-1.jpg', 'Villager 1'),
+(5, 'assets/characters/villager-2.jpg', 'Villager 2'),
+(6, 'assets/characters/villager-3.jpg', 'Villager 3'),
+(7, 'assets/characters/seto-1.jpg', 'Seto 1'),
+(8, 'assets/characters/heishin-1.jpg', 'Heishin'),
+(9, 'assets/characters/rex-raptor.jpg', 'Rex Raptor'),
+(10, 'assets/characters/weevil-underwood.jpg', 'Weevil Underwood'),
+(11, 'assets/characters/mai-valentine.jpg', 'Mai Valentine'),
+(12, 'assets/characters/bandit-keith.jpg', 'Bandit Keith'),
+(13, 'assets/characters/shadi.jpg', 'Shadi'),
+(14, 'assets/characters/yami-bakura.jpg', 'Yami Bakura'),
+(15, 'assets/characters/maximillion-pegasus.jpg', 'Maximillion Pegasus'),
+(16, 'assets/characters/isis.jpg', 'Isis'),
+(17, 'assets/characters/seto-kaiba.jpg', 'Seto Kaiba'),
+(18, 'assets/characters/mage-soldier.jpg', 'Mage Soldier'),
+(19, 'assets/characters/jono-2.jpg', 'Jono 2'),
+(20, 'assets/characters/teane-2.jpg', 'Teana 2'),
+(21, 'assets/characters/ocean-mage.jpg', 'Ocean Mage'),
+(22, 'assets/characters/high-mage-secmeton.jpg', 'High Mage Secmeton'),
+(23, 'assets/characters/forest-mage.jpg', 'Forest Mage'),
+(24, 'assets/characters/high-mage-anubisius.jpg', 'High Mage Anubisius'),
+(25, 'assets/characters/mountain-mage.jpg', 'Mountain Mage'),
+(26, 'assets/characters/high-mage-atenza.jpg', 'High Mage Atenza'),
+(27, 'assets/characters/desert-mage.jpg', 'Desert Mage'),
+(28, 'assets/characters/high-mage-martis.jpg', 'High Mage Martis'),
+(29, 'assets/characters/meadow-mage.jpg', 'Meadow Mage'),
+(30, 'assets/characters/high-mage-kepura.jpg', 'High Mage Kepura'),
+(31, 'assets/characters/labyrinth-mage.jpg', 'Labyrinth Mage'),
+(32, 'assets/characters/seto-2.jpg', 'Seto 2'),
+(33, 'assets/characters/sebek.jpg', 'Sebek'),
+(34, 'assets/characters/neku.jpg', 'Neku'),
+(35, 'assets/characters/heishin-2.jpg', 'Heishin 2'),
+(36, 'assets/characters/seto-3.jpg', 'Seto 3'),
+(37, 'assets/characters/dark-nite.jpg', 'Dark Nite'),
+(38, 'assets/characters/nite-mare.jpg', 'Nitemare'),
+(39, 'assets/characters/duel-master-k.jpg', 'Duel Master K');
+
+
 --
 -- Dumping data for table `card`
 --
 
-INSERT INTO `card` (`id`, `atk`, `card_type`, `def`, `description`, `image_url`, `level`, `monster_type`, `name`, `number`, `password`, `star_chip_cost`) VALUES
+INSERT INTO `cards` (`id`, `atk`, `card_type`, `def`, `description`, `image_url`, `level`, `monster_type`, `name`, `number`, `password`, `star_chip_cost`) VALUES
 (1, 3000, 1, 2500, 'An extremely rare card with Unsurpassed attack and defense Power.', 'assets/cards/001.jpg', 8, 5, 'Blue-eyes White Dragon', '001', '89631139', 999.999),
 (2, 800, 1, 2000, 'A delicate elf that lacks in offence but has terrific Defense backed by mystical power.', 'assets/cards/002.jpg', 4, 17, 'Mystical Elf', '002', '15025844', 160),
 (3, 1200, 1, 1000, 'A one-eyed behemoth with thick, powerful arms made for delivering punishing blows.', 'assets/cards/003.jpg', 4, 3, 'Hitotsu-me Giant', '003', '76184692', 70),
@@ -313,7 +360,7 @@ INSERT INTO `card` (`id`, `atk`, `card_type`, `def`, `description`, `image_url`,
 (283, 1100, 1, 700, 'A monster machine that generates images to confuse its enemies, making them prone to attacks.', 'assets/cards/283.jpg', 3, 17, 'Holograh', '283', '10859908', 45),
 (284, 1200, 1, 900, 'A magic user that corrodes the yin and yand to create a twisted power to attack enemies.', 'assets/cards/284.jpg', 3, 14, 'Tao the Chanter', '284', '46247516', 999.999),
 (285, 700, 1, 600, 'A snake with a single eye that blows an icy breath to freeze it opponents.', 'assets/cards/285.jpg', 2, 11, 'Serpent Marauder', '285', '82742611', 30);
-INSERT INTO `card` (`id`, `atk`, `card_type`, `def`, `description`, `image_url`, `level`, `monster_type`, `name`, `number`, `password`, `star_chip_cost`) VALUES
+INSERT INTO `cards` (`id`, `atk`, `card_type`, `def`, `description`, `image_url`, `level`, `monster_type`, `name`, `number`, `password`, `star_chip_cost`) VALUES
 (286, 1500, 1, 1800, 'An indestructible machine built to protect key entrances.', 'assets/cards/286.jpg', 5, 3, 'Gatekeeper', '286', '19737320', 290),
 (287, 1200, 1, 1400, 'An ogre possessed by the powers of the dark. Few can withstand its rapid charge.', 'assets/cards/287.jpg', 4, 7, 'Ogre of the Black Shadow', '287', '45121025', 120),
 (288, 600, 1, 1400, 'a demented artist that creates objects D\'art to cruch enemies.', 'assets/cards/288.jpg', 3, 1, 'Dark Artist', '288', '72520073', 999.999),
@@ -623,7 +670,7 @@ INSERT INTO `card` (`id`, `atk`, `card_type`, `def`, `description`, `image_url`,
 (592, 850, 1, 900, 'A fairy of the arts and an excellent harp player.', 'assets/cards/592.jpg', 3, 6, 'Muse-A', '592', '69992868', 40),
 (593, 1400, 1, 1800, 'A monster turtle with a crimson shell. It feeds on fire.', 'assets/cards/593.jpg', 5, 1, 'Giant Turtle Who Feeds on Flames', '593', '96981563', 260),
 (594, 2000, 1, 1800, 'A red rose possessed by a vile spirit that feeds on the life force of others to provide the flower with nourishment.', 'assets/cards/594.jpg', 6, 5, 'Rose Spectre of Dunn', '594', '32485271', 500);
-INSERT INTO `card` (`id`, `atk`, `card_type`, `def`, `description`, `image_url`, `level`, `monster_type`, `name`, `number`, `password`, `star_chip_cost`) VALUES
+INSERT INTO `cards` (`id`, `atk`, `card_type`, `def`, `description`, `image_url`, `level`, `monster_type`, `name`, `number`, `password`, `star_chip_cost`) VALUES
 (595, 1300, 1, 1400, 'Drags enemies into a mirror world.', 'assets/cards/595.jpg', 4, 2, 'Fiend Refrection #1', '595', '68870276', 140),
 (596, 1600, 1, 1200, 'A monster that can eat all it wants mut never is fulfilled.', 'assets/cards/596.jpg', 4, 1, 'Ghoul with an Appetite', '596', '95265975', 160),
 (597, 1500, 1, 1200, 'With skin tinged a bluish white, this strange creature is a fearsome sight to behold.', 'assets/cards/597.jpg', 4, 1, 'Pale Beast', '597', '21263083', 140),
@@ -757,7 +804,7 @@ INSERT INTO `card` (`id`, `atk`, `card_type`, `def`, `description`, `image_url`,
 -- Dumping data for table `deck`
 --
 
-INSERT INTO `deck` (`id`, `character_id`) VALUES
+INSERT INTO `decks` (`id`, `character_id`) VALUES
 (1, 1),
 (2, 2),
 (3, 3),
@@ -802,7 +849,7 @@ INSERT INTO `deck` (`id`, `character_id`) VALUES
 -- Dumping data for table `deck_card`
 --
 
-INSERT INTO `deck_card` (`card_id`, `deck_id`) VALUES
+INSERT INTO `deck_cards` (`card_id`, `deck_id`) VALUES
 (1, 17),
 (1, 32),
 (1, 35),
@@ -4489,55 +4536,10 @@ INSERT INTO `deck_card` (`card_id`, `deck_id`) VALUES
 (719, 28);
 
 --
--- Dumping data for table `game_character`
---
-
-INSERT INTO `game_character` (`id`, `image_url`, `name`) VALUES
-(1, 'assets/characters/simon-muran.jpg', 'Simon Muran'),
-(2, 'assets/characters/teana-1.jpg', 'Teana'),
-(3, 'assets/characters/jono-1.jpg', 'Jono'),
-(4, 'assets/characters/villager-1.jpg', 'Villager 1'),
-(5, 'assets/characters/villager-2.jpg', 'Villager 2'),
-(6, 'assets/characters/villager-3.jpg', 'Villager 3'),
-(7, 'assets/characters/seto-1.jpg', 'Seto 1'),
-(8, 'assets/characters/heishin-1.jpg', 'Heishin'),
-(9, 'assets/characters/rex-raptor.jpg', 'Rex Raptor'),
-(10, 'assets/characters/weevil-underwood.jpg', 'Weevil Underwood'),
-(11, 'assets/characters/mai-valentine.jpg', 'Mai Valentine'),
-(12, 'assets/characters/bandit-keith.jpg', 'Bandit Keith'),
-(13, 'assets/characters/shadi.jpg', 'Shadi'),
-(14, 'assets/characters/yami-bakura.jpg', 'Yami Bakura'),
-(15, 'assets/characters/maximillion-pegasus.jpg', 'Maximillion Pegasus'),
-(16, 'assets/characters/isis.jpg', 'Isis'),
-(17, 'assets/characters/seto-kaiba.jpg', 'Seto Kaiba'),
-(18, 'assets/characters/mage-soldier.jpg', 'Mage Soldier'),
-(19, 'assets/characters/jono-2.jpg', 'Jono 2'),
-(20, 'assets/characters/teane-2.jpg', 'Teana 2'),
-(21, 'assets/characters/ocean-mage.jpg', 'Ocean Mage'),
-(22, 'assets/characters/high-mage-secmeton.jpg', 'High Mage Secmeton'),
-(23, 'assets/characters/forest-mage.jpg', 'Forest Mage'),
-(24, 'assets/characters/high-mage-anubisius.jpg', 'High Mage Anubisius'),
-(25, 'assets/characters/mountain-mage.jpg', 'Mountain Mage'),
-(26, 'assets/characters/high-mage-atenza.jpg', 'High Mage Atenza'),
-(27, 'assets/characters/desert-mage.jpg', 'Desert Mage'),
-(28, 'assets/characters/high-mage-martis.jpg', 'High Mage Martis'),
-(29, 'assets/characters/meadow-mage.jpg', 'Meadow Mage'),
-(30, 'assets/characters/high-mage-kepura.jpg', 'High Mage Kepura'),
-(31, 'assets/characters/labyrinth-mage.jpg', 'Labyrinth Mage'),
-(32, 'assets/characters/seto-2.jpg', 'Seto 2'),
-(33, 'assets/characters/sebek.jpg', 'Sebek'),
-(34, 'assets/characters/neku.jpg', 'Neku'),
-(35, 'assets/characters/heishin-2.jpg', 'Heishin 2'),
-(36, 'assets/characters/seto-3.jpg', 'Seto 3'),
-(37, 'assets/characters/dark-nite.jpg', 'Dark Nite'),
-(38, 'assets/characters/nite-mare.jpg', 'Nitemare'),
-(39, 'assets/characters/duel-master-k.jpg', 'Duel Master K');
-
---
 -- Dumping data for table `guardian_star`
 --
 
-INSERT INTO `guardian_star` (`card_id`, `guardians`) VALUES
+INSERT INTO `guardian_stars` (`card_id`, `guardians`) VALUES
 (1, 1),
 (1, 5),
 (2, 1),
@@ -5777,7 +5779,3 @@ INSERT INTO `guardian_star` (`card_id`, `guardians`) VALUES
 (722, 2),
 (722, 5);
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

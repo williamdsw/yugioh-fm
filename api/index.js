@@ -1,8 +1,10 @@
 // || Imports
 const express = require('express');
-const { json, urlencoded } = require('body-parser');
 const cors = require('cors');
 const database = require('./app/models');
+const cardRoutes = require('./app/routes/card.routes');
+const deckRoutes = require('./app/routes/deck.routes');
+const gameCharacterRoutes = require('./app/routes/game-character.routes');
 
 // || Configuration
 const corsOptions = {
@@ -15,8 +17,6 @@ const corsOptions = {
 
 const app = express();
 //app.use(cors(corsOptions));
-app.use(json());
-app.use(urlencoded({ extended: true }));
 
 //database.sequelize.sync({ force: true })...
 database.sequelize.sync().then(() => console.log(new Date(), ': Drop and resync database!'));
@@ -38,7 +38,9 @@ app.all('*', (req, res, next) => {
 });
 */
 
-// routes(app);
+cardRoutes(app);
+deckRoutes(app);
+gameCharacterRoutes(app);
 
 const PORT = process.env.PORT || 8081;
 app.listen(PORT, () => console.log(new Date(), ': Server is running on', PORT));
